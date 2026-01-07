@@ -514,7 +514,6 @@ def worker_process_file(
                     centroid, direction, pts_c, seg_length
                 )
             else:
-                # Fallback to simple PCA line fit
                 x_mid, y_mid, z_mid, step_length = line_fit_3d_segment_midpoints(
                     x, y, z, seg_length
                 )
@@ -749,7 +748,7 @@ def worker_process_file(
 #     )
 
 def main():
-    # ---- SLURM rank ----
+# ---- SLURM rank ----
     try:
         rank = int(os.environ["SLURM_PROCID"])
     except Exception:
