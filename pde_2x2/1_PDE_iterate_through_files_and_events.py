@@ -631,25 +631,44 @@ def worker_process_file(
             traps = sum_hits["det"][0, 0]
             sums  = sum_hits["sum"][0, 0]
 
+            trap_summaries_flat = []
+
+            for tpc in tpc_list:
+                for trap in sorted(det_chan[tpc].keys(), key=int):
+                    adc = infer_adc(tpc, trap)
+                    chs = np.asarray(det_chan[tpc][trap], dtype=int)
+
+                    global_trap_id = int(tpc) * 40 + int(trap)
+
+                    trap_summaries_flat.append(
+                        (
+                            global_trap_id,
+                            int(tpc),
+                            int(adc),
+                            chs.tolist(),
+                        )
+                    )
+
+
             for tpc, trap, pe_sum in zip(tpcs, traps, sums):
                 tpc = int(tpc)
                 trap = int(trap)
                 pe_sum = float(pe_sum)
 
-                global_trap_id = tpc * 40 + trap
+                # global_trap_id = tpc * 40 + trap
 
-                adc = infer_adc(tpc, trap)
-                chs = np.asarray(det_chan[tpc][trap], dtype=int)
+                # # adc = infer_adc(tpc, trap)
+                # chs = np.asarray(det_chan[tpc][trap], dtype=int)
 
-                trap_summaries_flat_evt.append(
-                    (
-                        global_trap_id,
-                        tpc,
-                        adc,              # keep consistent with old code
-                        chs.tolist(),
-                        pe_sum,
-                    )
-                )
+                # trap_summaries_flat_evt.append(
+                #     (
+                #         global_trap_id,
+                #         tpc,
+                #         trap,
+                #         chs.tolist(),
+                #         pe_sum,
+                #     )
+                # )
 
                 for tpc, trap, pe_sum in zip(tpcs, traps, sums):
                     idx = trap_index[(int(tpc), int(trap))]
@@ -658,6 +677,10 @@ def worker_process_file(
             pe_meas_evt = np.asarray(light_trap_pe_sums, dtype=float)
             pe_exp_evt = np.asarray(detected_all_normal, dtype=float)
             pe_exp_noLT_evt_raw = np.asarray(detected_all_noLT, dtype=float)
+
+            # print(pe_meas_evt)
+            # print(pe_exp_evt)
+            # print(pe_exp_noLT_evt_raw)
 
             print("before accumulation")
             # ---------------------------------
@@ -686,12 +709,15 @@ def worker_process_file(
             PE_exp_noLT_tot += pe_exp_noLT_evt
             PE_meas_noLT_tot += pe_meas_noLT_evt
 
+
     print("before final totals")
     # Final totals
     PE_meas = PE_meas_tot
     PE_meas_noLTcr = PE_meas_noLT_tot
     PE_exp = PE_exp_tot
     PE_exp_noLTcr = PE_exp_noLT_tot
+
+    print(trap_summaries_flat)
 
     # Write CSV
     output_file = os.path.join(SAVE_DIR, f"pde_{hdf5_name}.csv")
