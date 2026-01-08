@@ -44,7 +44,7 @@ def flipYZ(coords):
 
 
 def get_plate_corners(det_id, tpc_shift, geom_dict):
-    # ACLs are every modulo 4 → shape_key convention you used
+    # ACLs are every modulo 4 -> shape_key convention you used
     shape_key = 0 if (det_id % 4) == 3 else 1
     offs_min = np.array(geom_dict["geom"][shape_key]["min"], float)
     offs_max = np.array(geom_dict["geom"][shape_key]["max"], float)
@@ -453,16 +453,16 @@ def worker_process_file(
     trap_summaries_flat = None
 
     # gains
-    df_gain = pd.read_csv(gains_file, sep=r"\s+")
+    # df_gain = pd.read_csv(gains_file, sep=r"\s+")
     db_difference = 24 - 10  # dB
     amplitude_ratio = 10 ** (db_difference / 20)
     factor_of_VGA = amplitude_ratio
 
     det_chan = geom_data["det_chan"]  # {tpc: {trap: [channels...]}}
-    tpc_list = [1, 0]
+    tpc_list = [1, 0, 3, 2, 5, 4, 7, 6]
 
     def infer_adc(tpc: int, trap: int) -> int:
-        return 2 * int(tpc) + (0 if int(trap) < 20 else 1)
+        return int(tpc) + (0 if int(trap) < 16 else 1)
 
     with h5flow.data.H5FlowDataManager(hdf5_path, "r") as f:
         for event in p_events:
@@ -475,7 +475,7 @@ def worker_process_file(
             z = my_muon_hits["z"].reshape(-1)
 
             coords = np.column_stack((x, y, z))
-
+            print("before DBSCAN")
             # ---------------------------------
             # Global DBSCAN: keep only largest cluster
             # ---------------------------------
@@ -490,7 +490,7 @@ def worker_process_file(
                 cluster_mask = labels == main_label
             else:
                 cluster_mask = np.zeros_like(labels, dtype=bool)
-
+            print("before RANSAC")
             # ---------------------------------
             # RANSAC line on the main cluster (fallback PCA)
             # ---------------------------------
@@ -517,7 +517,7 @@ def worker_process_file(
                 x_mid, y_mid, z_mid, step_length = line_fit_3d_segment_midpoints(
                     x, y, z, seg_length
                 )
-
+            print("before expected light")
             # ---------------------------------
             # Expected light per trap (this event)
             # ---------------------------------
@@ -551,6 +551,7 @@ def worker_process_file(
             detected_all_normal = np.array([r[5] for r in all_results_normal], dtype=float)
             detected_all_noLT = np.array([r[5] for r in all_results_noLT], dtype=float)
 
+            print("before calibration")
             # ---------------------------------
             # Waveforms → baseline → calibration → PE sums per trap (this event)
             # ---------------------------------
@@ -560,18 +561,18 @@ def worker_process_file(
             light_wvfms_n = wvfms - baselines[..., np.newaxis]
 
             light_wvfs_calib = np.zeros_like(light_wvfms_n)
-
-            for adc in range(4):
+            gain = 1 # for testing only
+            for adc in range(8):
                 for ch in range(64):
                     # if ch in (63, 62, 30, 31):
                     #     continue
-                    row = df_gain[(df_gain["adc"] == adc) & (df_gain["ch"] == ch)]
-                    if not row.empty:
-                        gain = row.iloc[0]["Mean_gain"] / factor_of_VGA
-                        if gain == 0:
-                            gain = -1
-                    else:
-                        gain = -1
+                    #row = df_gain[(df_gain["adc"] == adc) & (df_gain["ch"] == ch)]
+                    # if not row.empty:
+                    #     gain = row.iloc[0]["Mean_gain"] / factor_of_VGA
+                    #     if gain == 0:
+                    #         gain = -1
+                    # else:
+                    #     gain = -1
 
                     if gain == -1:
                         light_wvfs_calib[0, 0, 0, adc, ch, :] = 0.0
@@ -582,17 +583,18 @@ def worker_process_file(
 
             trap_summaries_flat_evt = []
             light_trap_pe_sums = []
-
+            print("1")
             ordered_pairs = [
                 (tpc, trap)
                 for tpc in tpc_list
                 for trap in sorted(det_chan[tpc].keys(), key=int)
             ]
-
+            print(ordered_pairs)
             for tpc, trap in ordered_pairs:
                 adc = infer_adc(tpc, trap)
+                print("adc",adc)
                 chs = np.asarray(det_chan[tpc][trap], dtype=int)
-
+                print(light_wvfs_calib.shape)
                 if chs.size == 0:
                     pe_sum = 0.0
                 else:
@@ -607,12 +609,14 @@ def worker_process_file(
                 trap_summaries_flat_evt.append(
                     (global_trap_id, int(tpc), int(adc), chs.tolist(), pe_sum)
                 )
-                light_trap_pe_sums.append(pe_sum)
 
+                light_trap_pe_sums.append(pe_sum)
+        
             pe_meas_evt = np.asarray(light_trap_pe_sums, dtype=float)
             pe_exp_evt = np.asarray(detected_all_normal, dtype=float)
             pe_exp_noLT_evt_raw = np.asarray(detected_all_noLT, dtype=float)
 
+            print("before accumulation")
             # ---------------------------------
             # Initialize global accumulators once
             # ---------------------------------
@@ -639,6 +643,7 @@ def worker_process_file(
             PE_exp_noLT_tot += pe_exp_noLT_evt
             PE_meas_noLT_tot += pe_meas_noLT_evt
 
+    print("before final totals")
     # Final totals
     PE_meas = PE_meas_tot
     PE_meas_noLTcr = PE_meas_noLT_tot
@@ -659,7 +664,7 @@ def worker_process_file(
         "PE_exp",
         "PE_exp_noLTcr",
     ]
-
+    print("before writing output")
     with open(output_file, "w", newline="") as f_csv:
         writer = csv.writer(f_csv)
         writer.writerow(titles)
@@ -756,7 +761,7 @@ def main():
         rank = 0
 
     # ---- Input locations ----
-    directory_selected_muons = "/global/homes/m/mnuland/backtracking/light-efficiency/selected_muons/"
+    directory_selected_muons = "/global/homes/m/mnuland/backtracking/light-efficiency/pde_ndlar_prototype/pde_2x2/"
     mu_file_pattern = "*.csv"
     file_list_muons = sorted(glob.glob(os.path.join(directory_selected_muons, mu_file_pattern)))
 
@@ -764,8 +769,8 @@ def main():
     # directory2 = "/global/cfs/cdirs/dune/www/data/FSD/reflows/v7/flow/cosmics/08Nov2024/"
     file_pattern = "packet-0050017-2024_07_09_01_14_40_CDT.FLOW.hdf5"
     file_list1 = sorted(glob.glob(os.path.join(directory1, file_pattern)))
-    file_list2 = sorted(glob.glob(os.path.join(directory2, file_pattern)))
-    file_list = file_list1 + file_list2
+    # file_list2 = sorted(glob.glob(os.path.join(directory2, file_pattern)))
+    file_list = file_list1 #+ file_list2
 
     # ---- Guard: extra ranks do nothing ----
     if rank < 0 or rank >= len(file_list_muons):
