@@ -555,63 +555,106 @@ def worker_process_file(
             # ---------------------------------
             # Waveforms → baseline → calibration → PE sums per trap (this event)
             # ---------------------------------
-            wvfms = f["charge/events", "light/events", "light/wvfm", event]["samples"] / 4.0
+            # wvfms = f["charge/events", "light/events", "light/wvfm", event]["samples"] / 4.0
+            sum_hits = f["charge/events", "light/events", "light/sum_hits", event]
 
-            baselines, _rms = min_range_baseline(wvfms)
-            light_wvfms_n = wvfms - baselines[..., np.newaxis]
+            # baselines, _rms = min_range_baseline(wvfms)
+            # light_wvfms_n = wvfms - baselines[..., np.newaxis]
 
-            light_wvfs_calib = np.zeros_like(light_wvfms_n)
-            gain = 1 # for testing only
-            for adc in range(8):
-                for ch in range(64):
-                    # if ch in (63, 62, 30, 31):
-                    #     continue
-                    #row = df_gain[(df_gain["adc"] == adc) & (df_gain["ch"] == ch)]
-                    # if not row.empty:
-                    #     gain = row.iloc[0]["Mean_gain"] / factor_of_VGA
-                    #     if gain == 0:
-                    #         gain = -1
-                    # else:
-                    #     gain = -1
+            # light_wvfs_calib = np.zeros_like(light_wvfms_n)
+            # gain = 1 # for testing only
+            # for adc in range(8):
+            #     for ch in range(64):
+            #         # if ch in (63, 62, 30, 31):
+            #         #     continue
+            #         #row = df_gain[(df_gain["adc"] == adc) & (df_gain["ch"] == ch)]
+            #         # if not row.empty:
+            #         #     gain = row.iloc[0]["Mean_gain"] / factor_of_VGA
+            #         #     if gain == 0:
+            #         #         gain = -1
+            #         # else:
+            #         #     gain = -1
 
-                    if gain == -1:
-                        light_wvfs_calib[0, 0, 0, adc, ch, :] = 0.0
-                    else:
-                        light_wvfs_calib[0, 0, 0, adc, ch, :] = (
-                            light_wvfms_n[0, 0, 0, adc, ch, :] / gain
-                        )
+            #         if gain == -1:
+            #             light_wvfs_calib[0, 0, 0, adc, ch, :] = 0.0
+            #         else:
+            #             light_wvfs_calib[0, 0, 0, adc, ch, :] = (
+            #                 light_wvfms_n[0, 0, 0, adc, ch, :] / gain
+            #             )
 
-            trap_summaries_flat_evt = []
-            light_trap_pe_sums = []
-            print("1")
+            # trap_summaries_flat_evt = []
+            # light_trap_pe_sums = []
+
             ordered_pairs = [
                 (tpc, trap)
                 for tpc in tpc_list
                 for trap in sorted(det_chan[tpc].keys(), key=int)
             ]
-            print(ordered_pairs)
-            for tpc, trap in ordered_pairs:
-                adc = infer_adc(tpc, trap)
-                print("adc",adc)
-                chs = np.asarray(det_chan[tpc][trap], dtype=int)
-                print(light_wvfs_calib.shape)
-                if chs.size == 0:
-                    pe_sum = 0.0
-                else:
-                    w = light_wvfs_calib[0, 0, 0, adc, chs, :]  # (n_chs, n_samples)
-                    dt = 1.0
-                    entry_integrals = np.trapezoid(w, axis=-1, dx=dt)
-                    min_pe = 0
-                    valid_integrals = entry_integrals[entry_integrals > min_pe]
-                    pe_sum = float(valid_integrals.sum()) if valid_integrals.size > 0 else 0.0
 
-                global_trap_id = int(tpc) * 40 + int(trap)
+            trap_index = {
+                (int(tpc), int(trap)): i
+                for i, (tpc, trap) in enumerate(ordered_pairs)
+            }
+
+            n_traps = len(ordered_pairs)
+
+
+            # for tpc, trap in sum_hits["tpc"], sum_hits["det"]:
+            #     # adc = infer_adc(tpc, trap)
+            #     chs = np.asarray(det_chan[tpc][trap], dtype=int)
+            #     # print(light_wvfs_calib.shape)
+            #     if chs.size == 0:
+            #         pe_sum = 0.0
+            #     else:
+            #         # w = light_wvfs_calib[0, 0, 0, adc, chs, :]  # (n_chs, n_samples)
+            #         # dt = 1.0
+            #         # entry_integrals = np.trapezoid(w, axis=-1, dx=dt)
+            #         # min_pe = 0
+            #         # valid_integrals = entry_integrals[entry_integrals > min_pe]
+            #         # pe_sum = float(valid_integrals.sum()) if valid_integrals.size > 0 else 0.0
+            #         hit_tpc = sum_hits["tpc"]
+            #         hit_trap = sum_hits["det"]
+            #         print(hit_tpc, hit_trap)
+            #         pe_sum = sum_hits["sum"].sum()
+
+            #     global_trap_id = int(tpc) * 40 + int(trap)
+            #     trap_summaries_flat_evt.append(
+            #         (global_trap_id, int(tpc), int(trap), chs.tolist(), pe_sum)
+            #     )
+            #     print(pe_sum)
+            #     light_trap_pe_sums.append(pe_sum)
+            trap_summaries_flat_evt = []
+            light_trap_pe_sums = np.zeros(n_traps, dtype=float)
+
+            # Take first event and first slice
+            tpcs  = sum_hits["tpc"][0, 0]
+            traps = sum_hits["det"][0, 0]
+            sums  = sum_hits["sum"][0, 0]
+
+            for tpc, trap, pe_sum in zip(tpcs, traps, sums):
+                tpc = int(tpc)
+                trap = int(trap)
+                pe_sum = float(pe_sum)
+
+                global_trap_id = tpc * 40 + trap
+
+                adc = infer_adc(tpc, trap)
+                chs = np.asarray(det_chan[tpc][trap], dtype=int)
+
                 trap_summaries_flat_evt.append(
-                    (global_trap_id, int(tpc), int(adc), chs.tolist(), pe_sum)
+                    (
+                        global_trap_id,
+                        tpc,
+                        adc,              # keep consistent with old code
+                        chs.tolist(),
+                        pe_sum,
+                    )
                 )
 
-                light_trap_pe_sums.append(pe_sum)
-        
+                for tpc, trap, pe_sum in zip(tpcs, traps, sums):
+                    idx = trap_index[(int(tpc), int(trap))]
+                    light_trap_pe_sums[idx] = float(pe_sum)
+
             pe_meas_evt = np.asarray(light_trap_pe_sums, dtype=float)
             pe_exp_evt = np.asarray(detected_all_normal, dtype=float)
             pe_exp_noLT_evt_raw = np.asarray(detected_all_noLT, dtype=float)
@@ -765,9 +808,9 @@ def main():
     mu_file_pattern = "*.csv"
     file_list_muons = sorted(glob.glob(os.path.join(directory_selected_muons, mu_file_pattern)))
 
-    directory1 = "/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/flow/"
+    directory1 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/"
     # directory2 = "/global/cfs/cdirs/dune/www/data/FSD/reflows/v7/flow/cosmics/08Nov2024/"
-    file_pattern = "packet-0050017-2024_07_09_01_14_40_CDT.FLOW.hdf5"
+    file_pattern = "packet-0050017-2024_07_08_14_03_28_CDT.FLOW.hdf5"
     file_list1 = sorted(glob.glob(os.path.join(directory1, file_pattern)))
     # file_list2 = sorted(glob.glob(os.path.join(directory2, file_pattern)))
     file_list = file_list1 #+ file_list2
