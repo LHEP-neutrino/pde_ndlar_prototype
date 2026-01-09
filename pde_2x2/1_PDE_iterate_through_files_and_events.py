@@ -461,8 +461,8 @@ def worker_process_file(
     det_chan = geom_data["det_chan"]  # {tpc: {trap: [channels...]}}
     tpc_list = [1, 0, 3, 2, 5, 4, 7, 6]
 
-    def infer_adc(tpc: int, trap: int) -> int:
-        return int(tpc) + (0 if int(trap) < 16 else 1)
+    # def infer_adc(tpc: int, trap: int) -> int:
+    #     return int(tpc) + (0 if int(trap) < 16 else 1)
 
     with h5flow.data.H5FlowDataManager(hdf5_path, "r") as f:
         for event in p_events:
@@ -631,11 +631,12 @@ def worker_process_file(
             traps = sum_hits["det"][0, 0]
             sums  = sum_hits["sum"][0, 0]
 
+            print(tpcs, traps, sums)
+
             trap_summaries_flat = []
 
             for tpc in tpc_list:
                 for trap in sorted(det_chan[tpc].keys(), key=int):
-                    adc = infer_adc(tpc, trap)
                     chs = np.asarray(det_chan[tpc][trap], dtype=int)
 
                     global_trap_id = int(tpc) * 40 + int(trap)
@@ -644,7 +645,7 @@ def worker_process_file(
                         (
                             global_trap_id,
                             int(tpc),
-                            int(adc),
+                            int(trap),
                             chs.tolist(),
                         )
                     )
@@ -678,6 +679,8 @@ def worker_process_file(
             pe_exp_evt = np.asarray(detected_all_normal, dtype=float)
             pe_exp_noLT_evt_raw = np.asarray(detected_all_noLT, dtype=float)
 
+            print(trap_summaries_flat)
+
             # print(pe_meas_evt)
             # print(pe_exp_evt)
             # print(pe_exp_noLT_evt_raw)
@@ -692,7 +695,6 @@ def worker_process_file(
                 PE_meas_noLT_tot = np.zeros(n_traps, dtype=float)
                 PE_exp_tot = np.zeros(n_traps, dtype=float)
                 PE_exp_noLT_tot = np.zeros(n_traps, dtype=float)
-                trap_summaries_flat = trap_summaries_flat_evt
 
             # Defensive NaN cleanup
             pe_meas_evt = np.nan_to_num(pe_meas_evt, nan=0.0, posinf=0.0, neginf=0.0)
@@ -709,6 +711,8 @@ def worker_process_file(
             PE_exp_noLT_tot += pe_exp_noLT_evt
             PE_meas_noLT_tot += pe_meas_noLT_evt
 
+            print(PE_meas_tot)
+
 
     print("before final totals")
     # Final totals
@@ -717,8 +721,6 @@ def worker_process_file(
     PE_exp = PE_exp_tot
     PE_exp_noLTcr = PE_exp_noLT_tot
 
-    print(trap_summaries_flat)
-
     # Write CSV
     output_file = os.path.join(SAVE_DIR, f"pde_{hdf5_name}.csv")
 
@@ -726,7 +728,7 @@ def worker_process_file(
         "file_name",
         "global_trap_id",
         "tpc",
-        "adc",
+        "trap",
         "ch_list",
         "PE_meas",
         "PE_meas_noLTcr",
@@ -743,11 +745,11 @@ def worker_process_file(
         ):
             global_trap_id = entry[0]
             tpc = entry[1]
-            adc = entry[2]
+            trap = entry[2]
             ch_list = entry[3]
 
             writer.writerow(
-                [hdf5_name, global_trap_id, tpc, adc, ch_list, meas, meas_noLT, exp_, exp_noLT]
+                [hdf5_name, global_trap_id, tpc, trap, ch_list, meas, meas_noLT, exp_, exp_noLT]
             )
 
     print(f"[rank worker] Wrote {len(PE_meas)} traps to '{output_file}'.")
