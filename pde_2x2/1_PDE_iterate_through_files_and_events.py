@@ -282,7 +282,7 @@ def process_tpc_from_line(
         & (z_mid <= upper[2])
     )
 
-    mask_zsafe = (z_mid > -47.5) & (z_mid < 47.5)
+    mask_zsafe = (z_mid > lower[2]) & (z_mid < upper[2])
     mask_tpc = mask_geom & mask_zsafe
 
     if not np.any(mask_tpc):
@@ -333,8 +333,8 @@ def process_tpc_from_line_LTcrossing(
     tpc_bounds,
     geom_data,
     det_positions_local,
-    z_safe=47.5,
-    z_cross_tol=0.5,
+    z_safe=65,
+    z_cross_tol=5,
 ):
     bounds = tpc_bounds[tpc_idx]
     lower, upper = np.array(bounds[0]), np.array(bounds[1])
@@ -347,7 +347,7 @@ def process_tpc_from_line_LTcrossing(
         & (z_mid >= lower[2])
         & (z_mid <= upper[2])
     )
-    mask_zsafe = (z_mid > -z_safe) & (z_mid < z_safe)
+    mask_zsafe = (z_mid > lower[2]) & (z_mid < upper[2])
     mask_tpc = mask_geom & mask_zsafe
 
     if not np.any(mask_tpc):
@@ -429,7 +429,7 @@ def worker_process_file(
     PE_exp_noLT_tot = None
 
     det_chan = geom_data["det_chan"]  # {tpc: {trap: [channels...]}}
-    tpc_list = [1, 0, 3, 2, 5, 4, 7, 6]
+    tpc_list = [0, 1, 2, 3, 4, 5, 6, 7]
 
     ordered_pairs = [
         (int(tpc), int(trap))
@@ -458,7 +458,7 @@ def worker_process_file(
             # ---------------------------------
             # Global DBSCAN: keep only largest cluster
             # ---------------------------------
-            db = DBSCAN(eps=5.0, min_samples=3)
+            db = DBSCAN(eps=15.0, min_samples=3)
             labels = db.fit_predict(coords)
 
             mask_non_noise = labels != -1
@@ -530,10 +530,12 @@ def worker_process_file(
             detected_all_normal = np.array(
                 [r[5] for r in all_results_normal], dtype=float
             )
-            if event % 5 == 0:
-                plot_event_example(detected_all_normal, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE")
-
             detected_all_noLT = np.array([r[5] for r in all_results_noLT], dtype=float)
+            
+            if event % 4917 == 0:
+                plot_event_example(detected_all_normal, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE")
+                plot_event_example(detected_all_noLT, all_results_noLT, 1, event, x_mid, y_mid, z_mid, "expected PE no LT crossing")
+
             # ---------------------------------
             # Measured PE sums per trap (this event)
             # ---------------------------------
@@ -554,8 +556,6 @@ def worker_process_file(
             pe_exp_evt = np.asarray(detected_all_normal, dtype=float)
             pe_exp_noLT_evt_raw = np.asarray(detected_all_noLT, dtype=float)
             
-            if event % 5 == 0:
-                plot_event_example(pe_meas_evt, all_results_normal, 1, event, x_mid, y_mid, z_mid, "measured PE")
             # ---------------------------------
             # Initialize global accumulators once
             # ---------------------------------
@@ -575,6 +575,10 @@ def worker_process_file(
 
             pe_exp_noLT_evt = np.where(mask_noLT, pe_exp_noLT_evt_raw, 0.0)
             pe_meas_noLT_evt = np.where(mask_noLT, pe_meas_evt, 0.0)
+
+            if event % 4917 == 0:
+                plot_event_example(pe_meas_evt, all_results_normal, 1, event, x, y, z, "measured PE")
+                plot_event_example(pe_meas_noLT_evt, all_results_noLT, 1, event, x, y, z, "measured PE no LT crossing")
 
             # Accumulate over events
             PE_meas_tot += pe_meas_evt
@@ -635,58 +639,170 @@ def worker_process_file(
 # Plot event display
 # ===================
     
+# def plot_event_example(pde_avg, all_results, max_events, event, x, y, z, title):
+#     import matplotlib.pyplot as plt
+#     from matplotlib.cm import ScalarMappable
+#     from matplotlib.colors import Normalize
+#     from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+#     import numpy as np
+
+#     # Normalize or set to zero if all zero
+#     pde_percent = np.zeros_like(pde_avg)
+#     if np.any(pde_avg > 0):
+#         pde_percent = pde_avg/np.max(pde_avg) * 100.0
+
+#     # Set up colormap and normalization range
+#     vmin = np.min(pde_percent)
+#     vmax = np.max(pde_percent)
+#     norm = Normalize(vmin=vmin, vmax=vmax)
+#     cmap = plt.cm.ocean_r
+
+#     fig = plt.figure(figsize=(12, 10))
+#     ax = fig.add_subplot(111, projection='3d')
+
+#     # Plot rectangles
+#     for result, value in zip(all_results, pde_percent):
+#         x0, y0, x1, y1, z_det, *_ = result
+#         corners = [
+#             [x0, z_det, y0],
+#             [x1, z_det, y0],
+#             [x1, z_det, y1],
+#             [x0, z_det, y1]
+#         ]
+#         color = cmap(norm(value))  # Map actual PDE % through normalized colormap
+#         rect = Poly3DCollection([corners], color=color, alpha=0.5)
+#         ax.add_collection3d(rect)
+#     ax.plot(x, z, y, color='b', marker='o', markersize=2, ls='none', alpha=0.8, label='Muon track')
+#     # Colorbar setup — use the same normalization!
+#     sm = ScalarMappable(cmap=cmap, norm=norm)
+#     sm.set_array([])  # Just to make matplotlib happy
+#     cbar = plt.colorbar(sm, ax=ax, shrink=0.6, pad=0.1)
+#     cbar.set_label('Normalized intensity (%)')
+
+#     # Axes setup
+#     ax.set_xlabel('X (cm)')
+#     ax.set_ylabel('Z (cm)')
+#     ax.set_zlabel('Y (cm)')
+#     ax.set_xlim(-70, 70)
+#     ax.set_ylim(-70, 70)
+#     ax.set_zlim(-70, 70)
+#     ax.set_title(f'Light per light trap (normalized to 1)')
+
+#     plt.savefig(os.path.join("pde_plots/", f'pde_{title}_{event}.png'))
+#     plt.close()
 def plot_event_example(pde_avg, all_results, max_events, event, x, y, z, title):
-    import matplotlib.pyplot as plt
-    from matplotlib.cm import ScalarMappable
-    from matplotlib.colors import Normalize
-    from mpl_toolkits.mplot3d.art3d import Poly3DCollection
     import numpy as np
+    import plotly.graph_objects as go
+    import plotly.io as pio
+    import os
 
-    # Normalize or set to zero if all zero
-    pde_percent = np.zeros_like(pde_avg)
+    # -----------------------------
+    # Normalize (same logic)
+    # -----------------------------
+    pde_percent = np.zeros_like(pde_avg, dtype=float)
     if np.any(pde_avg > 0):
-        pde_percent = pde_avg/np.max(pde_avg) * 100.0
+        pde_percent = pde_avg / np.max(pde_avg) * 100.0
 
-    # Set up colormap and normalization range
-    vmin = np.min(pde_percent)
-    vmax = np.max(pde_percent)
-    norm = Normalize(vmin=vmin, vmax=vmax)
-    cmap = plt.cm.ocean_r
+    vmin = float(np.min(pde_percent))
+    vmax = float(np.max(pde_percent))
 
-    fig = plt.figure(figsize=(12, 10))
-    ax = fig.add_subplot(111, projection='3d')
+    # -----------------------------
+    # Build rectangle meshes
+    # -----------------------------
+    meshes = []
 
-    # Plot rectangles
     for result, value in zip(all_results, pde_percent):
         x0, y0, x1, y1, z_det, *_ = result
-        corners = [
-            [x0, z_det, y0],
-            [x1, z_det, y0],
-            [x1, z_det, y1],
-            [x0, z_det, y1]
-        ]
-        color = cmap(norm(value))  # Map actual PDE % through normalized colormap
-        rect = Poly3DCollection([corners], color=color, alpha=0.5)
-        ax.add_collection3d(rect)
-    ax.plot(x, z, y, color='b', marker='o', markersize=2, ls='none', alpha=0.8, label='Muon track')
-    # Colorbar setup — use the same normalization!
-    sm = ScalarMappable(cmap=cmap, norm=norm)
-    sm.set_array([])  # Just to make matplotlib happy
-    cbar = plt.colorbar(sm, ax=ax, shrink=0.6, pad=0.1)
-    cbar.set_label('Normalized intensity (%)')
 
-    # Axes setup
-    ax.set_xlabel('X (cm)')
-    ax.set_ylabel('Z (cm)')
-    ax.set_zlabel('Y (cm)')
-    ax.set_xlim(-70, 70)
-    ax.set_ylim(-70, 70)
-    ax.set_zlim(-70, 70)
-    ax.set_title(f'Light per light trap (normalized to 1)')
+        # Rectangle corners (same orientation as matplotlib)
+        xs = [x0, x1, x1, x0]
+        ys = [z_det, z_det, z_det, z_det]
+        zs = [y0, y0, y1, y1]
 
-    plt.savefig(os.path.join("pde_plots/", f'pde_{title}_{event}.png'))
-    plt.close()
+        # Two triangles per rectangle
+        i = [0, 0]
+        j = [1, 2]
+        k = [2, 3]
 
+        meshes.append(
+            go.Mesh3d(
+                x=xs,
+                y=ys,
+                z=zs,
+                i=i,
+                j=j,
+                k=k,
+                intensity=[value] * 4,
+                colorscale="cividis",
+                cmin=vmin,
+                cmax=vmax,
+                opacity=0.5,
+                showscale=False
+            )
+        )
+
+    # -----------------------------
+    # Muon track
+    # -----------------------------
+    track = go.Scatter3d(
+        x=x,
+        y=z,
+        z=y,
+        mode="markers",
+        marker=dict(
+            size=3,
+            color="blue",
+            opacity=0.8
+        ),
+        name="Muon track"
+    )
+
+    # -----------------------------
+    # Dummy trace for colorbar
+    # -----------------------------
+    colorbar_trace = go.Scatter3d(
+        x=[None],
+        y=[None],
+        z=[None],
+        mode="markers",
+        marker=dict(
+            size=0.1,
+            color=[vmin, vmax],
+            colorscale="cividis",
+            cmin=vmin,
+            cmax=vmax,
+            colorbar=dict(
+                title="Normalized intensity (%)"
+            ),
+        ),
+        showlegend=False
+    )
+
+    # -----------------------------
+    # Figure
+    # -----------------------------
+    fig = go.Figure(data=[*meshes, track, colorbar_trace])
+
+    fig.update_layout(
+        title="Light per light trap (normalized to 1)",
+        scene=dict(
+            xaxis=dict(title="X (cm)", range=[-70, 70]),
+            yaxis=dict(title="Z (cm)", range=[-70, 70]),
+            zaxis=dict(title="Y (cm)", range=[-70, 70]),
+            aspectmode="cube",
+        ),
+        width=900,
+        height=800,
+        showlegend=True
+    )
+
+    # -----------------------------
+    # Save
+    # -----------------------------
+    os.makedirs("pde_plots", exist_ok=True)
+    outfile = os.path.join("pde_plots", f"pde_{title}_{event}.png")
+    # pio.get_chrome()
+    pio.write_image(fig, outfile)
 
 # =========================
 # Main: rank → files → geometry → worker
