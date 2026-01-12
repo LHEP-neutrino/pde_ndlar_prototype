@@ -45,7 +45,7 @@ def flipYZ(coords):
 
 def get_plate_corners(det_id, tpc_shift, geom_dict):
     # ACLs are every modulo 4 -> shape_key convention you used
-    shape_key = 0 if (det_id % 4) == 3 else 1
+    shape_key = 0 if (det_id % 4) == 0 else 1 # ==3 for FSD!
     offs_min = np.array(geom_dict["geom"][shape_key]["min"], float)
     offs_max = np.array(geom_dict["geom"][shape_key]["max"], float)
 
@@ -111,36 +111,9 @@ def line_fit_3d_segment_midpoints(x, y, z, seg_length):
     return x_mid, y_mid, z_mid, step_length
 
 
-# def compute_light_fraction_from_line_midpoints(
-#     x_mid, y_mid, z_mid, step_length, x0, x1, y0, y1, z_det
-# ):
-#     Y_gamma = 24000
-#     alpha = 0.093
-#     dEdx_muon = 2.1
-
-#     total_produced = 0.0
-#     total_detected = 0.0
-
-#     R = np.log(1 + alpha / dEdx_muon) / (alpha / dEdx_muon)
-
-#     for xm, ym, zm, L in zip(x_mid, y_mid, z_mid, step_length):
-#         if L <= 0:
-#             continue
-
-#         N_gamma = Y_gamma * dEdx_muon * L * R
-#         total_produced += N_gamma
-
-#         omega = solid_angle_rectangle(xm, ym, zm, x0, x1, y0, y1, z_det)
-#         if omega < 0:
-#             omega = 0.0
-
-#         total_detected += (omega / (4 * np.pi)) * N_gamma
-
-#     frac = total_detected / total_produced if total_produced > 0 else 0.0
-#     return total_detected, total_produced, frac
-
-def compute_light_fraction_from_line_midpoints(x_mid, y_mid, z_mid, step_length,
-                                               x0, x1, y0, y1, z_det):
+def compute_light_fraction_from_line_midpoints(
+    x_mid, y_mid, z_mid, step_length, x0, x1, y0, y1, z_det
+):
     """
     Compute expected light for a rectangular detector from a pre-defined
     straight track, given by segment midpoints and lengths, using:
@@ -154,9 +127,9 @@ def compute_light_fraction_from_line_midpoints(x_mid, y_mid, z_mid, step_length,
     total_detected, total_produced, fraction_detected
     """
     # Constants
-    Y_gamma = 24000       # photons per MeV at 500 V/cm
-    dEdx_muon = 2.1       # MeV/cm, MIP energy loss in LAr
-    att_len = 3000.0      # cm
+    Y_gamma = 24000  # photons per MeV at 500 V/cm
+    dEdx_muon = 2.1  # MeV/cm, MIP energy loss in LAr
+    att_len = 3000.0  # cm
 
     total_produced = 0.0
     total_detected = 0.0
@@ -171,7 +144,7 @@ def compute_light_fraction_from_line_midpoints(x_mid, y_mid, z_mid, step_length,
             continue
 
         # distance from emission point to trap center
-        d = np.sqrt((xm - xc)**2 + (ym - yc)**2 + (zm - zc)**2)
+        d = np.sqrt((xm - xc) ** 2 + (ym - yc) ** 2 + (zm - zc) ** 2)
 
         # photons produced in this segment with exponential reduction
         N_gamma = Y_gamma * dEdx_muon * L * np.exp(-d / att_len)
@@ -212,9 +185,7 @@ def min_range_baseline(array, segment_size=15, num_segments=40, num_means=4):
     rms = np.sqrt(
         np.mean(
             np.square(
-                np.take_along_axis(
-                    ranges, smallest_ordering[..., :num_means], axis=-1
-                )
+                np.take_along_axis(ranges, smallest_ordering[..., :num_means], axis=-1)
             ),
             axis=-1,
         )
@@ -290,7 +261,14 @@ def line_midpoints_from_model(centroid, direction, pts, seg_length):
 # TPC processing (from global line)
 # =========================
 def process_tpc_from_line(
-    tpc_idx, x_mid, y_mid, z_mid, step_length, tpc_bounds, geom_data, det_positions_local
+    tpc_idx,
+    x_mid,
+    y_mid,
+    z_mid,
+    step_length,
+    tpc_bounds,
+    geom_data,
+    det_positions_local,
 ):
     bounds = tpc_bounds[tpc_idx]
     lower, upper = np.array(bounds[0]), np.array(bounds[1])
@@ -337,7 +315,7 @@ def process_tpc_from_line(
 
     results = []
     for z_det in my_detector_z:
-        for (x0, y0, x1, y1) in unique_dets:
+        for x0, y0, x1, y1 in unique_dets:
             det, prod, frac = compute_light_fraction_from_line_midpoints(
                 x_t, y_t, z_t, L_t, x0, x1, y0, y1, z_det
             )
@@ -402,7 +380,7 @@ def process_tpc_from_line_LTcrossing(
 
     results = []
     for z_det in my_detector_z:
-        for (x0, y0, x1, y1) in unique_dets:
+        for x0, y0, x1, y1 in unique_dets:
             crosses_mask = (
                 (x_t >= x0)
                 & (x_t <= x1)
@@ -435,7 +413,6 @@ def worker_process_file(
     geom_data: dict,
     tpc_bounds: np.ndarray,
     det_positions_local: np.ndarray,
-    gains_file: str = "Gains_FSDrun1_final_1(mean_if_needed).txt",
 ):
     """
     Process a single CSV (muon selections) + matching HDF5 file.
@@ -450,19 +427,21 @@ def worker_process_file(
     PE_meas_noLT_tot = None
     PE_exp_tot = None
     PE_exp_noLT_tot = None
-    trap_summaries_flat = None
-
-    # gains
-    # df_gain = pd.read_csv(gains_file, sep=r"\s+")
-    db_difference = 24 - 10  # dB
-    amplitude_ratio = 10 ** (db_difference / 20)
-    factor_of_VGA = amplitude_ratio
 
     det_chan = geom_data["det_chan"]  # {tpc: {trap: [channels...]}}
     tpc_list = [1, 0, 3, 2, 5, 4, 7, 6]
 
-    # def infer_adc(tpc: int, trap: int) -> int:
-    #     return int(tpc) + (0 if int(trap) < 16 else 1)
+    ordered_pairs = [
+        (int(tpc), int(trap))
+        for tpc in tpc_list
+        for trap in sorted(det_chan[tpc].keys(), key=int)
+    ]
+    trap_index = {pair: i for i, pair in enumerate(ordered_pairs)}
+    trap_summaries_flat = [
+        (tpc * 40 + trap, tpc, trap, list(map(int, det_chan[tpc][trap])))
+        for tpc, trap in ordered_pairs
+    ]
+    n_traps = len(ordered_pairs)
 
     with h5flow.data.H5FlowDataManager(hdf5_path, "r") as f:
         for event in p_events:
@@ -475,7 +454,7 @@ def worker_process_file(
             z = my_muon_hits["z"].reshape(-1)
 
             coords = np.column_stack((x, y, z))
-            print("before DBSCAN")
+
             # ---------------------------------
             # Global DBSCAN: keep only largest cluster
             # ---------------------------------
@@ -490,7 +469,7 @@ def worker_process_file(
                 cluster_mask = labels == main_label
             else:
                 cluster_mask = np.zeros_like(labels, dtype=bool)
-            print("before RANSAC")
+
             # ---------------------------------
             # RANSAC line on the main cluster (fallback PCA)
             # ---------------------------------
@@ -517,7 +496,7 @@ def worker_process_file(
                 x_mid, y_mid, z_mid, step_length = line_fit_3d_segment_midpoints(
                     x, y, z, seg_length
                 )
-            print("before expected light")
+
             # ---------------------------------
             # Expected light per trap (this event)
             # ---------------------------------
@@ -548,144 +527,35 @@ def worker_process_file(
                 all_results_normal.extend(res_norm)
                 all_results_noLT.extend(res_noLT)
 
-            detected_all_normal = np.array([r[5] for r in all_results_normal], dtype=float)
-            detected_all_noLT = np.array([r[5] for r in all_results_noLT], dtype=float)
+            detected_all_normal = np.array(
+                [r[5] for r in all_results_normal], dtype=float
+            )
+            if event % 5 == 0:
+                plot_event_example(detected_all_normal, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE")
 
-            print("before calibration")
+            detected_all_noLT = np.array([r[5] for r in all_results_noLT], dtype=float)
             # ---------------------------------
-            # Waveforms → baseline → calibration → PE sums per trap (this event)
+            # Measured PE sums per trap (this event)
             # ---------------------------------
-            # wvfms = f["charge/events", "light/events", "light/wvfm", event]["samples"] / 4.0
             sum_hits = f["charge/events", "light/events", "light/sum_hits", event]
 
-            # baselines, _rms = min_range_baseline(wvfms)
-            # light_wvfms_n = wvfms - baselines[..., np.newaxis]
-
-            # light_wvfs_calib = np.zeros_like(light_wvfms_n)
-            # gain = 1 # for testing only
-            # for adc in range(8):
-            #     for ch in range(64):
-            #         # if ch in (63, 62, 30, 31):
-            #         #     continue
-            #         #row = df_gain[(df_gain["adc"] == adc) & (df_gain["ch"] == ch)]
-            #         # if not row.empty:
-            #         #     gain = row.iloc[0]["Mean_gain"] / factor_of_VGA
-            #         #     if gain == 0:
-            #         #         gain = -1
-            #         # else:
-            #         #     gain = -1
-
-            #         if gain == -1:
-            #             light_wvfs_calib[0, 0, 0, adc, ch, :] = 0.0
-            #         else:
-            #             light_wvfs_calib[0, 0, 0, adc, ch, :] = (
-            #                 light_wvfms_n[0, 0, 0, adc, ch, :] / gain
-            #             )
-
-            # trap_summaries_flat_evt = []
-            # light_trap_pe_sums = []
-
-            ordered_pairs = [
-                (tpc, trap)
-                for tpc in tpc_list
-                for trap in sorted(det_chan[tpc].keys(), key=int)
-            ]
-
-            trap_index = {
-                (int(tpc), int(trap)): i
-                for i, (tpc, trap) in enumerate(ordered_pairs)
-            }
-
-            n_traps = len(ordered_pairs)
-
-
-            # for tpc, trap in sum_hits["tpc"], sum_hits["det"]:
-            #     # adc = infer_adc(tpc, trap)
-            #     chs = np.asarray(det_chan[tpc][trap], dtype=int)
-            #     # print(light_wvfs_calib.shape)
-            #     if chs.size == 0:
-            #         pe_sum = 0.0
-            #     else:
-            #         # w = light_wvfs_calib[0, 0, 0, adc, chs, :]  # (n_chs, n_samples)
-            #         # dt = 1.0
-            #         # entry_integrals = np.trapezoid(w, axis=-1, dx=dt)
-            #         # min_pe = 0
-            #         # valid_integrals = entry_integrals[entry_integrals > min_pe]
-            #         # pe_sum = float(valid_integrals.sum()) if valid_integrals.size > 0 else 0.0
-            #         hit_tpc = sum_hits["tpc"]
-            #         hit_trap = sum_hits["det"]
-            #         print(hit_tpc, hit_trap)
-            #         pe_sum = sum_hits["sum"].sum()
-
-            #     global_trap_id = int(tpc) * 40 + int(trap)
-            #     trap_summaries_flat_evt.append(
-            #         (global_trap_id, int(tpc), int(trap), chs.tolist(), pe_sum)
-            #     )
-            #     print(pe_sum)
-            #     light_trap_pe_sums.append(pe_sum)
-            trap_summaries_flat_evt = []
             light_trap_pe_sums = np.zeros(n_traps, dtype=float)
 
-            # Take first event and first slice
-            tpcs  = sum_hits["tpc"][0, 0]
+            # Take first entry (bug in flow triples all entries?)
+            tpcs = sum_hits["tpc"][0, 0]
             traps = sum_hits["det"][0, 0]
-            sums  = sum_hits["sum"][0, 0]
-
-            print(tpcs, traps, sums)
-
-            trap_summaries_flat = []
-
-            for tpc in tpc_list:
-                for trap in sorted(det_chan[tpc].keys(), key=int):
-                    chs = np.asarray(det_chan[tpc][trap], dtype=int)
-
-                    global_trap_id = int(tpc) * 40 + int(trap)
-
-                    trap_summaries_flat.append(
-                        (
-                            global_trap_id,
-                            int(tpc),
-                            int(trap),
-                            chs.tolist(),
-                        )
-                    )
-
+            sums = sum_hits["sum"][0, 0]
 
             for tpc, trap, pe_sum in zip(tpcs, traps, sums):
-                tpc = int(tpc)
-                trap = int(trap)
-                pe_sum = float(pe_sum)
-
-                # global_trap_id = tpc * 40 + trap
-
-                # # adc = infer_adc(tpc, trap)
-                # chs = np.asarray(det_chan[tpc][trap], dtype=int)
-
-                # trap_summaries_flat_evt.append(
-                #     (
-                #         global_trap_id,
-                #         tpc,
-                #         trap,
-                #         chs.tolist(),
-                #         pe_sum,
-                #     )
-                # )
-
-                for tpc, trap, pe_sum in zip(tpcs, traps, sums):
-                    idx = trap_index[(int(tpc), int(trap))]
-                    light_trap_pe_sums[idx] = float(pe_sum)
+                idx = trap_index[(int(tpc), int(trap))]
+                light_trap_pe_sums[idx] = float(pe_sum)
 
             pe_meas_evt = np.asarray(light_trap_pe_sums, dtype=float)
             pe_exp_evt = np.asarray(detected_all_normal, dtype=float)
             pe_exp_noLT_evt_raw = np.asarray(detected_all_noLT, dtype=float)
-
-            print(trap_summaries_flat)
-
-            # print(pe_meas_evt)
-            # print(pe_exp_evt)
-            # print(pe_exp_noLT_evt_raw)
-
-            print("before accumulation")
+            
+            if event % 5 == 0:
+                plot_event_example(pe_meas_evt, all_results_normal, 1, event, x_mid, y_mid, z_mid, "measured PE")
             # ---------------------------------
             # Initialize global accumulators once
             # ---------------------------------
@@ -701,9 +571,10 @@ def worker_process_file(
             pe_exp_evt = np.nan_to_num(pe_exp_evt, nan=0.0, posinf=0.0, neginf=0.0)
 
             # no-LT logic
-            mask_good = np.isfinite(pe_exp_noLT_evt_raw) & (pe_exp_noLT_evt_raw > 0)
-            pe_exp_noLT_evt = np.where(mask_good, pe_exp_noLT_evt_raw, 0.0)
-            pe_meas_noLT_evt = np.where(mask_good, pe_meas_evt, 0.0)
+            mask_noLT = np.isfinite(pe_exp_noLT_evt_raw) & (pe_exp_noLT_evt_raw > 0)
+
+            pe_exp_noLT_evt = np.where(mask_noLT, pe_exp_noLT_evt_raw, 0.0)
+            pe_meas_noLT_evt = np.where(mask_noLT, pe_meas_evt, 0.0)
 
             # Accumulate over events
             PE_meas_tot += pe_meas_evt
@@ -711,10 +582,6 @@ def worker_process_file(
             PE_exp_noLT_tot += pe_exp_noLT_evt
             PE_meas_noLT_tot += pe_meas_noLT_evt
 
-            print(PE_meas_tot)
-
-
-    print("before final totals")
     # Final totals
     PE_meas = PE_meas_tot
     PE_meas_noLTcr = PE_meas_noLT_tot
@@ -735,7 +602,7 @@ def worker_process_file(
         "PE_exp",
         "PE_exp_noLTcr",
     ]
-    print("before writing output")
+
     with open(output_file, "w", newline="") as f_csv:
         writer = csv.writer(f_csv)
         writer.writerow(titles)
@@ -749,10 +616,76 @@ def worker_process_file(
             ch_list = entry[3]
 
             writer.writerow(
-                [hdf5_name, global_trap_id, tpc, trap, ch_list, meas, meas_noLT, exp_, exp_noLT]
+                [
+                    hdf5_name,
+                    global_trap_id,
+                    tpc,
+                    trap,
+                    ch_list,
+                    meas,
+                    meas_noLT,
+                    exp_,
+                    exp_noLT,
+                ]
             )
 
     print(f"[rank worker] Wrote {len(PE_meas)} traps to '{output_file}'.")
+
+# ===================
+# Plot event display
+# ===================
+    
+def plot_event_example(pde_avg, all_results, max_events, event, x, y, z, title):
+    import matplotlib.pyplot as plt
+    from matplotlib.cm import ScalarMappable
+    from matplotlib.colors import Normalize
+    from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+    import numpy as np
+
+    # Normalize or set to zero if all zero
+    pde_percent = np.zeros_like(pde_avg)
+    if np.any(pde_avg > 0):
+        pde_percent = pde_avg/np.max(pde_avg) * 100.0
+
+    # Set up colormap and normalization range
+    vmin = np.min(pde_percent)
+    vmax = np.max(pde_percent)
+    norm = Normalize(vmin=vmin, vmax=vmax)
+    cmap = plt.cm.ocean_r
+
+    fig = plt.figure(figsize=(12, 10))
+    ax = fig.add_subplot(111, projection='3d')
+
+    # Plot rectangles
+    for result, value in zip(all_results, pde_percent):
+        x0, y0, x1, y1, z_det, *_ = result
+        corners = [
+            [x0, z_det, y0],
+            [x1, z_det, y0],
+            [x1, z_det, y1],
+            [x0, z_det, y1]
+        ]
+        color = cmap(norm(value))  # Map actual PDE % through normalized colormap
+        rect = Poly3DCollection([corners], color=color, alpha=0.5)
+        ax.add_collection3d(rect)
+    ax.plot(x, z, y, color='b', marker='o', markersize=2, ls='none', alpha=0.8, label='Muon track')
+    # Colorbar setup — use the same normalization!
+    sm = ScalarMappable(cmap=cmap, norm=norm)
+    sm.set_array([])  # Just to make matplotlib happy
+    cbar = plt.colorbar(sm, ax=ax, shrink=0.6, pad=0.1)
+    cbar.set_label('Normalized intensity (%)')
+
+    # Axes setup
+    ax.set_xlabel('X (cm)')
+    ax.set_ylabel('Z (cm)')
+    ax.set_zlabel('Y (cm)')
+    ax.set_xlim(-70, 70)
+    ax.set_ylim(-70, 70)
+    ax.set_zlim(-70, 70)
+    ax.set_title(f'Light per light trap (normalized to 1)')
+
+    plt.savefig(os.path.join("pde_plots/", f'pde_{title}_{event}.png'))
+    plt.close()
 
 
 # =========================
@@ -823,8 +756,9 @@ def worker_process_file(
 #         det_positions_local=det_positions_local,
 #     )
 
+
 def main():
-# ---- SLURM rank ----
+    # ---- SLURM rank ----
     try:
         rank = int(os.environ["SLURM_PROCID"])
     except Exception:
@@ -834,18 +768,22 @@ def main():
     # ---- Input locations ----
     directory_selected_muons = "/global/homes/m/mnuland/backtracking/light-efficiency/pde_ndlar_prototype/pde_2x2/"
     mu_file_pattern = "*.csv"
-    file_list_muons = sorted(glob.glob(os.path.join(directory_selected_muons, mu_file_pattern)))
+    file_list_muons = sorted(
+        glob.glob(os.path.join(directory_selected_muons, mu_file_pattern))
+    )
 
     directory1 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/"
     # directory2 = "/global/cfs/cdirs/dune/www/data/FSD/reflows/v7/flow/cosmics/08Nov2024/"
     file_pattern = "packet-0050017-2024_07_08_14_03_28_CDT.FLOW.hdf5"
     file_list1 = sorted(glob.glob(os.path.join(directory1, file_pattern)))
     # file_list2 = sorted(glob.glob(os.path.join(directory2, file_pattern)))
-    file_list = file_list1 #+ file_list2
+    file_list = file_list1  # + file_list2
 
     # ---- Guard: extra ranks do nothing ----
     if rank < 0 or rank >= len(file_list_muons):
-        print(f"Rank {rank}: no CSV to process (len(file_list_muons)={len(file_list_muons)}), exiting.")
+        print(
+            f"Rank {rank}: no CSV to process (len(file_list_muons)={len(file_list_muons)}), exiting."
+        )
         return
 
     # ---- Match CSV -> HDF5 ----
@@ -857,7 +795,9 @@ def main():
     hdf5_path = hdf5_map.get(hdf5_name)
 
     if hdf5_path is None:
-        print(f"Rank {rank}: WARNING: No matching HDF5 file found for {hdf5_name}. Exiting.")
+        print(
+            f"Rank {rank}: WARNING: No matching HDF5 file found for {hdf5_name}. Exiting."
+        )
         return
 
     print(f"[rank {rank}] CSV : {csv_file}")
@@ -895,6 +835,7 @@ def main():
         print(f"[rank {rank}] ERROR processing {csv_basename}: {e}")
         # traceback.print_exc()
         return
+
 
 if __name__ == "__main__":
     main()
