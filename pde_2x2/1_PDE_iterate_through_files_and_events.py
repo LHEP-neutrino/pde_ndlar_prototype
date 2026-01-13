@@ -882,7 +882,7 @@ def main():
         rank = 0
 
     # ---- Input locations ----
-    directory_selected_muons = "/global/homes/m/mnuland/backtracking/light-efficiency/pde_ndlar_prototype/pde_2x2/"
+    directory_selected_muons = "/global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first100/"
     mu_file_pattern = "*.csv"
     file_list_muons = sorted(
         glob.glob(os.path.join(directory_selected_muons, mu_file_pattern))
@@ -890,10 +890,10 @@ def main():
 
     directory1 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/"
     # directory2 = "/global/cfs/cdirs/dune/www/data/FSD/reflows/v7/flow/cosmics/08Nov2024/"
-    file_pattern = "packet-0050017-2024_07_08_14_03_28_CDT.FLOW.hdf5"
+    file_pattern = "*.FLOW.hdf5"
     file_list1 = sorted(glob.glob(os.path.join(directory1, file_pattern)))
     # file_list2 = sorted(glob.glob(os.path.join(directory2, file_pattern)))
-    file_list = file_list1  # + file_list2
+    file_list = file_list1[0:100]  # + file_list2
 
     # ---- Guard: extra ranks do nothing ----
     if rank < 0 or rank >= len(file_list_muons):
@@ -901,7 +901,7 @@ def main():
             f"Rank {rank}: no CSV to process (len(file_list_muons)={len(file_list_muons)}), exiting."
         )
         return
-
+    
     # ---- Match CSV -> HDF5 ----
     hdf5_map = {os.path.basename(path): path for path in file_list}
 
