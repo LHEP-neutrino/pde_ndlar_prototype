@@ -229,6 +229,11 @@ def ransac_line_3d(
             if best_count >= max(min_inliers, 0.9 * N):
                 break
 
+    # -------------------------
+    # ADDED: explicit success flag BEFORE fallback-to-all-inliers behavior
+    # -------------------------
+    success = (best_inliers is not None) and (best_count >= max(2, min_inliers))  # ADDED
+
     if best_inliers is None or best_count < max(2, min_inliers):
         best_inliers = np.ones(N, dtype=bool)
 
@@ -238,7 +243,10 @@ def ransac_line_3d(
     direction = vt[0]
     direction /= np.linalg.norm(direction)
 
-    return centroid, direction, best_inliers
+    # -------------------------
+    # CHANGED: return success flag as 4th return value
+    # -------------------------
+    return centroid, direction, best_inliers, success  # CHANGED
 
 
 def line_midpoints_from_model(centroid, direction, pts, seg_length):
@@ -334,7 +342,7 @@ def process_tpc_from_line_LTcrossing(
     geom_data,
     det_positions_local,
     z_safe=65,
-    z_cross_tol=5,
+    z_cross_tol=2,
 ):
     bounds = tpc_bounds[tpc_idx]
     lower, upper = np.array(bounds[0]), np.array(bounds[1])
@@ -443,6 +451,11 @@ def worker_process_file(
     ]
     n_traps = len(ordered_pairs)
 
+    # -------------------------
+    # ADDED: track which events were skipped due to RANSAC failure
+    # -------------------------
+    skipped_events_ransac = 0  # ADDED
+    skipped_event_ids_ransac = []  # ADDED
     with h5flow.data.H5FlowDataManager(hdf5_path, "r") as f:
         for event in p_events:
             # ---------------------------------
@@ -458,7 +471,7 @@ def worker_process_file(
             # ---------------------------------
             # Global DBSCAN: keep only largest cluster
             # ---------------------------------
-            db = DBSCAN(eps=15.0, min_samples=3)
+            db = DBSCAN(eps=5.0, min_samples=3)
             labels = db.fit_predict(coords)
 
             mask_non_noise = labels != -1
@@ -471,15 +484,24 @@ def worker_process_file(
                 cluster_mask = np.zeros_like(labels, dtype=bool)
 
             # ---------------------------------
-            # RANSAC line on the main cluster (fallback PCA)
+            # RANSAC line on the main cluster (no fallback line-fit)
+            # If RANSAC fails: SKIP EVENT
             # ---------------------------------
             seg_length = 0.1  # cm
-            if np.sum(cluster_mask) >= 2:
-                x_c = x[cluster_mask]
-                y_c = y[cluster_mask]
-                z_c = z[cluster_mask]
 
-                centroid, direction, _inliers_r = ransac_line_3d(
+            if np.sum(cluster_mask) < 2:
+                # Not enough points to even attempt a line fit
+                skipped_events_ransac += 1  # ADDED
+                skipped_event_ids_ransac.append(int(event))  # ADDED
+                continue  # ADDED
+
+            x_c = x[cluster_mask]
+            y_c = y[cluster_mask]
+            z_c = z[cluster_mask]
+
+            try:
+                # CHANGED: ransac_line_3d now returns (centroid, direction, inliers, success)
+                centroid, direction, _inliers_r, success = ransac_line_3d(  # CHANGED
                     x_c,
                     y_c,
                     z_c,
@@ -488,15 +510,24 @@ def worker_process_file(
                     max_trials=500,
                     random_state=42,
                 )
-                pts_c = np.column_stack((x_c, y_c, z_c))
-                x_mid, y_mid, z_mid, step_length = line_midpoints_from_model(
-                    centroid, direction, pts_c, seg_length
-                )
-            else:
-                x_mid, y_mid, z_mid, step_length = line_fit_3d_segment_midpoints(
-                    x, y, z, seg_length
-                )
+            except Exception:
+                skipped_events_ransac += 1  # ADDED
+                skipped_event_ids_ransac.append(int(event))  # ADDED
+                continue  # ADDED
 
+            # -------------------------
+            # CHANGED: skip ONLY if RANSAC did not meet its own min_inliers criterion
+            # (removed the previous np.all(inliers) constraint)
+            # -------------------------
+            if not success:  # CHANGED
+                skipped_events_ransac += 1  # ADDED
+                skipped_event_ids_ransac.append(int(event))  # ADDED
+                continue  # ADDED
+
+            pts_c = np.column_stack((x_c, y_c, z_c))
+            x_mid, y_mid, z_mid, step_length = line_midpoints_from_model(
+                centroid, direction, pts_c, seg_length
+            )
             # ---------------------------------
             # Expected light per trap (this event)
             # ---------------------------------
@@ -532,7 +563,7 @@ def worker_process_file(
             )
             detected_all_noLT = np.array([r[5] for r in all_results_noLT], dtype=float)
             
-            if event % 4917 == 0:
+            if event % 100 == 0:
                 plot_event_example(detected_all_normal, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE")
                 plot_event_example(detected_all_noLT, all_results_noLT, 1, event, x_mid, y_mid, z_mid, "expected PE no LT crossing")
 
@@ -576,7 +607,7 @@ def worker_process_file(
             pe_exp_noLT_evt = np.where(mask_noLT, pe_exp_noLT_evt_raw, 0.0)
             pe_meas_noLT_evt = np.where(mask_noLT, pe_meas_evt, 0.0)
 
-            if event % 4917 == 0:
+            if event % 100 == 0:
                 plot_event_example(pe_meas_evt, all_results_normal, 1, event, x, y, z, "measured PE")
                 plot_event_example(pe_meas_noLT_evt, all_results_noLT, 1, event, x, y, z, "measured PE no LT crossing")
 
@@ -710,7 +741,6 @@ def plot_event_example(pde_avg, all_results, max_events, event, x, y, z, title):
     # Build rectangle meshes
     # -----------------------------
     meshes = []
-
     for result, value in zip(all_results, pde_percent):
         x0, y0, x1, y1, z_det, *_ = result
 
@@ -882,7 +912,7 @@ def main():
         rank = 0
 
     # ---- Input locations ----
-    directory_selected_muons = "/global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first100/"
+    directory_selected_muons = "/global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muons/"
     mu_file_pattern = "*.csv"
     file_list_muons = sorted(
         glob.glob(os.path.join(directory_selected_muons, mu_file_pattern))
@@ -893,7 +923,7 @@ def main():
     file_pattern = "*.FLOW.hdf5"
     file_list1 = sorted(glob.glob(os.path.join(directory1, file_pattern)))
     # file_list2 = sorted(glob.glob(os.path.join(directory2, file_pattern)))
-    file_list = file_list1[0:100]  # + file_list2
+    file_list = file_list1[0:691]  # + file_list2
 
     # ---- Guard: extra ranks do nothing ----
     if rank < 0 or rank >= len(file_list_muons):

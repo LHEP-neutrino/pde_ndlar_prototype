@@ -1,0 +1,600 @@
+[rank 11] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_16_13_42_CDT.FLOW.hdf5.csv
+[rank 11] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_13_42_CDT.FLOW.hdf5
+[rank 11] ERROR processing packet-0050017-2024_07_08_16_13_42_CDT.FLOW.hdf5.csv: Cannot convert masked element to a Python int.
+[rank 67] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_01_44_44_CDT.FLOW.hdf5.csv
+[rank 67] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_01_44_44_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_01_44_44_CDT.FLOW.hdf5.csv'.
+[rank 10] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_16_03_41_CDT.FLOW.hdf5.csv
+[rank 10] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_03_41_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_16_03_41_CDT.FLOW.hdf5.csv'.
+[rank 7] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_14_53_33_CDT.FLOW.hdf5.csv
+[rank 7] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_53_33_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_53_33_CDT.FLOW.hdf5.csv'.
+[rank 45] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_22_04_20_CDT.FLOW.hdf5.csv
+[rank 45] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_04_20_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_04_20_CDT.FLOW.hdf5.csv'.
+[rank 90] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_05_45_09_CDT.FLOW.hdf5.csv
+[rank 90] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_05_45_09_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_05_45_09_CDT.FLOW.hdf5.csv'.
+[rank 20] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_17_43_52_CDT.FLOW.hdf5.csv
+[rank 20] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_43_52_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_43_52_CDT.FLOW.hdf5.csv'.
+[rank 63] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_01_04_39_CDT.FLOW.hdf5.csv
+[rank 63] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_01_04_39_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_01_04_39_CDT.FLOW.hdf5.csv'.
+[rank 2] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_14_03_28_CDT.FLOW.hdf5.csv
+[rank 2] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_03_28_CDT.FLOW.hdf5
+[rank 2] ERROR processing packet-0050017-2024_07_08_14_03_28_CDT.FLOW.hdf5.csv: '>' not supported between instances of 'list' and 'int'
+[rank 31] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_19_34_04_CDT.FLOW.hdf5.csv
+[rank 31] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_34_04_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_34_04_CDT.FLOW.hdf5.csv'.
+[rank 46] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_22_14_21_CDT.FLOW.hdf5.csv
+[rank 46] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_14_21_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_14_21_CDT.FLOW.hdf5.csv'.
+[rank 121] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_11_05_43_CDT.FLOW.hdf5.csv
+[rank 121] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_11_05_43_CDT.FLOW.hdf5
+[rank 121] ERROR processing packet-0050017-2024_07_09_11_05_43_CDT.FLOW.hdf5.csv: Cannot convert masked element to a Python int.
+[rank 146] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_15_36_12_CDT.FLOW.hdf5.csv
+[rank 146] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_15_36_12_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_15_36_12_CDT.FLOW.hdf5.csv'.
+[rank 125] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_11_45_47_CDT.FLOW.hdf5.csv
+[rank 125] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_11_45_47_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_11_45_47_CDT.FLOW.hdf5.csv'.
+[rank 82] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_04_14_59_CDT.FLOW.hdf5.csv
+[rank 82] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_04_14_59_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_04_14_59_CDT.FLOW.hdf5.csv'.
+[rank 15] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_16_53_46_CDT.FLOW.hdf5.csv
+[rank 15] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_53_46_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_16_53_46_CDT.FLOW.hdf5.csv'.
+[rank 100] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_07_25_20_CDT.FLOW.hdf5.csv
+[rank 100] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_07_25_20_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_07_25_20_CDT.FLOW.hdf5.csv'.
+[rank 71] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_02_24_48_CDT.FLOW.hdf5.csv
+[rank 71] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_02_24_48_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_02_24_48_CDT.FLOW.hdf5.csv'.
+[rank 145] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_15_06_09_CDT.FLOW.hdf5.csv
+[rank 145] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_15_06_09_CDT.FLOW.hdf5
+[rank 145] ERROR processing packet-0050017-2024_07_09_15_06_09_CDT.FLOW.hdf5.csv: '>' not supported between instances of 'list' and 'int'
+[rank 19] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_17_33_51_CDT.FLOW.hdf5.csv
+[rank 19] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_33_51_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_33_51_CDT.FLOW.hdf5.csv'.
+[rank 53] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_23_24_28_CDT.FLOW.hdf5.csv
+[rank 53] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_23_24_28_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_23_24_28_CDT.FLOW.hdf5.csv'.
+[rank 152] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_16_36_19_CDT.FLOW.hdf5.csv
+[rank 152] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_16_36_19_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_16_36_19_CDT.FLOW.hdf5.csv'.
+[rank 99] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_07_15_19_CDT.FLOW.hdf5.csv
+[rank 99] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_07_15_19_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_07_15_19_CDT.FLOW.hdf5.csv'.
+[rank 89] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_05_35_08_CDT.FLOW.hdf5.csv
+[rank 89] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_05_35_08_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_05_35_08_CDT.FLOW.hdf5.csv'.
+[rank 58] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_00_14_34_CDT.FLOW.hdf5.csv
+[rank 58] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_00_14_34_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_00_14_34_CDT.FLOW.hdf5.csv'.
+[rank 37] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_20_34_10_CDT.FLOW.hdf5.csv
+[rank 37] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_20_34_10_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_20_34_10_CDT.FLOW.hdf5.csv'.
+[rank 51] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_23_04_26_CDT.FLOW.hdf5.csv
+[rank 51] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_23_04_26_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_23_04_26_CDT.FLOW.hdf5.csv'.
+[rank 84] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_04_35_02_CDT.FLOW.hdf5.csv
+[rank 84] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_04_35_02_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_04_35_02_CDT.FLOW.hdf5.csv'.
+[rank 36] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_20_24_09_CDT.FLOW.hdf5.csv
+[rank 36] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_20_24_09_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_20_24_09_CDT.FLOW.hdf5.csv'.
+[rank 74] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_02_54_51_CDT.FLOW.hdf5.csv
+[rank 74] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_02_54_51_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_02_54_51_CDT.FLOW.hdf5.csv'.
+[rank 14] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_16_43_45_CDT.FLOW.hdf5.csv
+[rank 14] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_43_45_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_16_43_45_CDT.FLOW.hdf5.csv'.
+[rank 81] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_04_04_58_CDT.FLOW.hdf5.csv
+[rank 81] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_04_04_58_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_04_04_58_CDT.FLOW.hdf5.csv'.
+[rank 91] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_05_55_10_CDT.FLOW.hdf5.csv
+[rank 91] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_05_55_10_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_05_55_10_CDT.FLOW.hdf5.csv'.
+[rank 62] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_00_54_38_CDT.FLOW.hdf5.csv
+[rank 62] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_00_54_38_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_00_54_38_CDT.FLOW.hdf5.csv'.
+[rank 78] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_03_34_55_CDT.FLOW.hdf5.csv
+[rank 78] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_03_34_55_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_03_34_55_CDT.FLOW.hdf5.csv'.
+[rank 120] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_10_55_42_CDT.FLOW.hdf5.csv
+[rank 120] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_10_55_42_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_10_55_42_CDT.FLOW.hdf5.csv'.
+[rank 54] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_23_34_29_CDT.FLOW.hdf5.csv
+[rank 54] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_23_34_29_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_23_34_29_CDT.FLOW.hdf5.csv'.
+[rank 96] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_06_45_15_CDT.FLOW.hdf5.csv
+[rank 96] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_06_45_15_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_06_45_15_CDT.FLOW.hdf5.csv'.
+[rank 87] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_05_15_06_CDT.FLOW.hdf5.csv
+[rank 87] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_05_15_06_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_05_15_06_CDT.FLOW.hdf5.csv'.
+[rank 184] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_22_06_54_CDT.FLOW.hdf5.csv
+[rank 184] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_22_06_54_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_22_06_54_CDT.FLOW.hdf5.csv'.
+[rank 95] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_06_35_14_CDT.FLOW.hdf5.csv
+[rank 95] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_06_35_14_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_06_35_14_CDT.FLOW.hdf5.csv'.
+[rank 88] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_05_25_07_CDT.FLOW.hdf5.csv
+[rank 88] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_05_25_07_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_05_25_07_CDT.FLOW.hdf5.csv'.
+[rank 165] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_18_46_32_CDT.FLOW.hdf5.csv
+[rank 165] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_18_46_32_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_18_46_32_CDT.FLOW.hdf5.csv'.
+[rank 132] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_12_55_55_CDT.FLOW.hdf5.csv
+[rank 132] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_12_55_55_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_12_55_55_CDT.FLOW.hdf5.csv'.
+[rank 69] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_02_04_46_CDT.FLOW.hdf5.csv
+[rank 69] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_02_04_46_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_02_04_46_CDT.FLOW.hdf5.csv'.
+[rank 168] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_19_16_36_CDT.FLOW.hdf5.csv
+[rank 168] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_19_16_36_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_19_16_36_CDT.FLOW.hdf5.csv'.
+[rank 49] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_22_44_24_CDT.FLOW.hdf5.csv
+[rank 49] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_44_24_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_44_24_CDT.FLOW.hdf5.csv'.
+[rank 79] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_03_44_56_CDT.FLOW.hdf5.csv
+[rank 79] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_03_44_56_CDT.FLOW.hdf5
+[rank 79] ERROR processing packet-0050017-2024_07_09_03_44_56_CDT.FLOW.hdf5.csv: Cannot convert masked element to a Python int.
+[rank 17] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_17_13_49_CDT.FLOW.hdf5.csv
+[rank 17] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_13_49_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_13_49_CDT.FLOW.hdf5.csv'.
+[rank 134] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_13_15_57_CDT.FLOW.hdf5.csv
+[rank 134] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_13_15_57_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_13_15_57_CDT.FLOW.hdf5.csv'.
+[rank 32] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_19_44_05_CDT.FLOW.hdf5.csv
+[rank 32] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_44_05_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_44_05_CDT.FLOW.hdf5.csv'.
+[rank 80] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_03_54_57_CDT.FLOW.hdf5.csv
+[rank 80] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_03_54_57_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_03_54_57_CDT.FLOW.hdf5.csv'.
+[rank 50] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_22_54_25_CDT.FLOW.hdf5.csv
+[rank 50] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_54_25_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_54_25_CDT.FLOW.hdf5.csv'.
+[rank 97] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_06_55_17_CDT.FLOW.hdf5.csv
+[rank 97] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_06_55_17_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_06_55_17_CDT.FLOW.hdf5.csv'.
+[rank 175] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_20_26_43_CDT.FLOW.hdf5.csv
+[rank 175] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_20_26_43_CDT.FLOW.hdf5
+[rank 175] ERROR processing packet-0050017-2024_07_09_20_26_43_CDT.FLOW.hdf5.csv: Cannot convert masked element to a Python int.
+[rank 21] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_17_53_53_CDT.FLOW.hdf5.csv
+[rank 21] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_53_53_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_53_53_CDT.FLOW.hdf5.csv'.
+[rank 70] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_02_14_47_CDT.FLOW.hdf5.csv
+[rank 70] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_02_14_47_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_02_14_47_CDT.FLOW.hdf5.csv'.
+[rank 56] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_23_54_32_CDT.FLOW.hdf5.csv
+[rank 56] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_23_54_32_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_23_54_32_CDT.FLOW.hdf5.csv'.
+[rank 127] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_12_05_50_CDT.FLOW.hdf5.csv
+[rank 127] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_12_05_50_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_12_05_50_CDT.FLOW.hdf5.csv'.
+[rank 47] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_22_24_22_CDT.FLOW.hdf5.csv
+[rank 47] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_24_22_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_24_22_CDT.FLOW.hdf5.csv'.
+[rank 139] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_14_06_02_CDT.FLOW.hdf5.csv
+[rank 139] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_14_06_02_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_14_06_02_CDT.FLOW.hdf5.csv'.
+[rank 8] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_15_43_39_CDT.FLOW.hdf5.csv
+[rank 8] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_15_43_39_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_15_43_39_CDT.FLOW.hdf5.csv'.
+[rank 194] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_23_47_04_CDT.FLOW.hdf5.csv
+[rank 194] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_23_47_04_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_23_47_04_CDT.FLOW.hdf5.csv'.
+[rank 4] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_14_23_30_CDT.FLOW.hdf5.csv
+[rank 4] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_23_30_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_23_30_CDT.FLOW.hdf5.csv'.
+[rank 103] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_07_55_23_CDT.FLOW.hdf5.csv
+[rank 103] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_07_55_23_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_07_55_23_CDT.FLOW.hdf5.csv'.
+[rank 128] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_12_15_51_CDT.FLOW.hdf5.csv
+[rank 128] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_12_15_51_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_12_15_51_CDT.FLOW.hdf5.csv'.
+[rank 75] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_03_04_52_CDT.FLOW.hdf5.csv
+[rank 75] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_03_04_52_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_03_04_52_CDT.FLOW.hdf5.csv'.
+[rank 101] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_07_35_21_CDT.FLOW.hdf5.csv
+[rank 101] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_07_35_21_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_07_35_21_CDT.FLOW.hdf5.csv'.
+[rank 162] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_18_16_29_CDT.FLOW.hdf5.csv
+[rank 162] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_18_16_29_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_18_16_29_CDT.FLOW.hdf5.csv'.
+[rank 114] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_09_55_36_CDT.FLOW.hdf5.csv
+[rank 114] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_09_55_36_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_09_55_36_CDT.FLOW.hdf5.csv'.
+[rank 5] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_14_33_31_CDT.FLOW.hdf5.csv
+[rank 5] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_33_31_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_33_31_CDT.FLOW.hdf5.csv'.
+[rank 112] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_09_35_34_CDT.FLOW.hdf5.csv
+[rank 112] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_09_35_34_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_09_35_34_CDT.FLOW.hdf5.csv'.
+[rank 43] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_21_44_18_CDT.FLOW.hdf5.csv
+[rank 43] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_44_18_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_44_18_CDT.FLOW.hdf5.csv'.
+[rank 183] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_21_46_52_CDT.FLOW.hdf5.csv
+[rank 183] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_21_46_52_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_21_46_52_CDT.FLOW.hdf5.csv'.
+[rank 52] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_23_14_27_CDT.FLOW.hdf5.csv
+[rank 52] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_23_14_27_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_23_14_27_CDT.FLOW.hdf5.csv'.
+[rank 198] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_10_00_27_09_CDT.FLOW.hdf5.csv
+[rank 198] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_10_00_27_09_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_10_00_27_09_CDT.FLOW.hdf5.csv'.
+[rank 137] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_13_46_00_CDT.FLOW.hdf5.csv
+[rank 137] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_13_46_00_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_13_46_00_CDT.FLOW.hdf5.csv'.
+[rank 13] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_16_33_44_CDT.FLOW.hdf5.csv
+[rank 13] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_33_44_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_16_33_44_CDT.FLOW.hdf5.csv'.
+[rank 144] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_14_56_08_CDT.FLOW.hdf5.csv
+[rank 144] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_14_56_08_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_14_56_08_CDT.FLOW.hdf5.csv'.
+[rank 94] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_06_25_13_CDT.FLOW.hdf5.csv
+[rank 94] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_06_25_13_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_06_25_13_CDT.FLOW.hdf5.csv'.
+[rank 61] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_00_44_37_CDT.FLOW.hdf5.csv
+[rank 61] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_00_44_37_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_00_44_37_CDT.FLOW.hdf5.csv'.
+[rank 154] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_16_56_21_CDT.FLOW.hdf5.csv
+[rank 154] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_16_56_21_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_16_56_21_CDT.FLOW.hdf5.csv'.
+[rank 115] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_10_05_37_CDT.FLOW.hdf5.csv
+[rank 115] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_10_05_37_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_10_05_37_CDT.FLOW.hdf5.csv'.
+[rank 138] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_13_56_01_CDT.FLOW.hdf5.csv
+[rank 138] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_13_56_01_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_13_56_01_CDT.FLOW.hdf5.csv'.
+[rank 140] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_14_16_03_CDT.FLOW.hdf5.csv
+[rank 140] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_14_16_03_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_14_16_03_CDT.FLOW.hdf5.csv'.
+[rank 98] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_07_05_18_CDT.FLOW.hdf5.csv
+[rank 98] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_07_05_18_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_07_05_18_CDT.FLOW.hdf5.csv'.
+[rank 35] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_20_14_08_CDT.FLOW.hdf5.csv
+[rank 35] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_20_14_08_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_20_14_08_CDT.FLOW.hdf5.csv'.
+[rank 186] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_22_26_56_CDT.FLOW.hdf5.csv
+[rank 186] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_22_26_56_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_22_26_56_CDT.FLOW.hdf5.csv'.
+[rank 30] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_19_24_03_CDT.FLOW.hdf5.csv
+[rank 30] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_24_03_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_24_03_CDT.FLOW.hdf5.csv'.
+[rank 159] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_17_46_26_CDT.FLOW.hdf5.csv
+[rank 159] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_17_46_26_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_17_46_26_CDT.FLOW.hdf5.csv'.
+[rank 68] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_01_54_45_CDT.FLOW.hdf5.csv
+[rank 68] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_01_54_45_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_01_54_45_CDT.FLOW.hdf5.csv'.
+[rank 178] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_20_56_46_CDT.FLOW.hdf5.csv
+[rank 178] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_20_56_46_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_20_56_46_CDT.FLOW.hdf5.csv'.
+[rank 44] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_21_54_19_CDT.FLOW.hdf5.csv
+[rank 44] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_54_19_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_54_19_CDT.FLOW.hdf5.csv'.
+[rank 172] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_19_56_40_CDT.FLOW.hdf5.csv
+[rank 172] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_19_56_40_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_19_56_40_CDT.FLOW.hdf5.csv'.
+[rank 141] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_14_26_05_CDT.FLOW.hdf5.csv
+[rank 141] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_14_26_05_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_14_26_05_CDT.FLOW.hdf5.csv'.
+[rank 22] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_18_03_54_CDT.FLOW.hdf5.csv
+[rank 22] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_03_54_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_03_54_CDT.FLOW.hdf5.csv'.
+[rank 176] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_20_36_44_CDT.FLOW.hdf5.csv
+[rank 176] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_20_36_44_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_20_36_44_CDT.FLOW.hdf5.csv'.
+[rank 169] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_19_26_37_CDT.FLOW.hdf5.csv
+[rank 169] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_19_26_37_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_19_26_37_CDT.FLOW.hdf5.csv'.
+[rank 171] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_19_46_39_CDT.FLOW.hdf5.csv
+[rank 171] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_19_46_39_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_19_46_39_CDT.FLOW.hdf5.csv'.
+[rank 163] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_18_26_30_CDT.FLOW.hdf5.csv
+[rank 163] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_18_26_30_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_18_26_30_CDT.FLOW.hdf5.csv'.
+[rank 85] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_04_45_03_CDT.FLOW.hdf5.csv
+[rank 85] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_04_45_03_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_04_45_03_CDT.FLOW.hdf5.csv'.
+[rank 92] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_06_05_11_CDT.FLOW.hdf5.csv
+[rank 92] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_06_05_11_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_06_05_11_CDT.FLOW.hdf5.csv'.
+[rank 64] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_01_14_40_CDT.FLOW.hdf5.csv
+[rank 64] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_01_14_40_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_01_14_40_CDT.FLOW.hdf5.csv'.
+[rank 65] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_01_24_41_CDT.FLOW.hdf5.csv
+[rank 65] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_01_24_41_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_01_24_41_CDT.FLOW.hdf5.csv'.
+[rank 177] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_20_46_45_CDT.FLOW.hdf5.csv
+[rank 177] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_20_46_45_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_20_46_45_CDT.FLOW.hdf5.csv'.
+[rank 72] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_02_34_49_CDT.FLOW.hdf5.csv
+[rank 72] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_02_34_49_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_02_34_49_CDT.FLOW.hdf5.csv'.
+[rank 123] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_11_25_45_CDT.FLOW.hdf5.csv
+[rank 123] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_11_25_45_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_11_25_45_CDT.FLOW.hdf5.csv'.
+[rank 117] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_10_25_39_CDT.FLOW.hdf5.csv
+[rank 117] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_10_25_39_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_10_25_39_CDT.FLOW.hdf5.csv'.
+[rank 180] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_21_16_48_CDT.FLOW.hdf5.csv
+[rank 180] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_21_16_48_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_21_16_48_CDT.FLOW.hdf5.csv'.
+[rank 113] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_09_45_35_CDT.FLOW.hdf5.csv
+[rank 113] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_09_45_35_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_09_45_35_CDT.FLOW.hdf5.csv'.
+[rank 16] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_17_03_47_CDT.FLOW.hdf5.csv
+[rank 16] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_03_47_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_03_47_CDT.FLOW.hdf5.csv'.
+[rank 1] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_13_53_27_CDT.FLOW.hdf5.csv
+[rank 1] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_13_53_27_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_13_53_27_CDT.FLOW.hdf5.csv'.
+[rank 48] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_22_34_23_CDT.FLOW.hdf5.csv
+[rank 48] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_34_23_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_34_23_CDT.FLOW.hdf5.csv'.
+[rank 199] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_10_00_37_10_CDT.FLOW.hdf5.csv
+[rank 199] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_10_00_37_10_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_10_00_37_10_CDT.FLOW.hdf5.csv'.
+[rank 133] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_13_05_56_CDT.FLOW.hdf5.csv
+[rank 133] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_13_05_56_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_13_05_56_CDT.FLOW.hdf5.csv'.
+[rank 57] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_00_04_33_CDT.FLOW.hdf5.csv
+[rank 57] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_00_04_33_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_00_04_33_CDT.FLOW.hdf5.csv'.
+[rank 195] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_23_57_06_CDT.FLOW.hdf5.csv
+[rank 195] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_23_57_06_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_23_57_06_CDT.FLOW.hdf5.csv'.
+[rank 110] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_09_15_31_CDT.FLOW.hdf5.csv
+[rank 110] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_09_15_31_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_09_15_31_CDT.FLOW.hdf5.csv'.
+[rank 12] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_16_23_43_CDT.FLOW.hdf5.csv
+[rank 12] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_23_43_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_16_23_43_CDT.FLOW.hdf5.csv'.
+[rank 42] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_21_34_17_CDT.FLOW.hdf5.csv
+[rank 42] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_34_17_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_34_17_CDT.FLOW.hdf5.csv'.
+[rank 9] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_15_53_40_CDT.FLOW.hdf5.csv
+[rank 9] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_15_53_40_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_15_53_40_CDT.FLOW.hdf5.csv'.
+[rank 73] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_02_44_50_CDT.FLOW.hdf5.csv
+[rank 73] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_02_44_50_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_02_44_50_CDT.FLOW.hdf5.csv'.
+[rank 131] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_12_45_54_CDT.FLOW.hdf5.csv
+[rank 131] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_12_45_54_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_12_45_54_CDT.FLOW.hdf5.csv'.
+[rank 29] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_19_14_02_CDT.FLOW.hdf5.csv
+[rank 29] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_14_02_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_14_02_CDT.FLOW.hdf5.csv'.
+[rank 193] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_23_37_03_CDT.FLOW.hdf5.csv
+[rank 193] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_23_37_03_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_23_37_03_CDT.FLOW.hdf5.csv'.
+[rank 151] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_16_26_17_CDT.FLOW.hdf5.csv
+[rank 151] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_16_26_17_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_16_26_17_CDT.FLOW.hdf5.csv'.
+[rank 59] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_00_24_35_CDT.FLOW.hdf5.csv
+[rank 59] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_00_24_35_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_00_24_35_CDT.FLOW.hdf5.csv'.
+[rank 157] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_17_26_24_CDT.FLOW.hdf5.csv
+[rank 157] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_17_26_24_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_17_26_24_CDT.FLOW.hdf5.csv'.
+[rank 27] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_18_54_00_CDT.FLOW.hdf5.csv
+[rank 27] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_54_00_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_54_00_CDT.FLOW.hdf5.csv'.
+[rank 18] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_17_23_50_CDT.FLOW.hdf5.csv
+[rank 18] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_23_50_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_23_50_CDT.FLOW.hdf5.csv'.
+[rank 55] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_23_44_31_CDT.FLOW.hdf5.csv
+[rank 55] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_23_44_31_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_23_44_31_CDT.FLOW.hdf5.csv'.
+[rank 187] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_22_36_57_CDT.FLOW.hdf5.csv
+[rank 187] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_22_36_57_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_22_36_57_CDT.FLOW.hdf5.csv'.
+[rank 118] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_10_35_40_CDT.FLOW.hdf5.csv
+[rank 118] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_10_35_40_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_10_35_40_CDT.FLOW.hdf5.csv'.
+[rank 104] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_08_05_24_CDT.FLOW.hdf5.csv
+[rank 104] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_08_05_24_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_08_05_24_CDT.FLOW.hdf5.csv'.
+[rank 150] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_16_16_16_CDT.FLOW.hdf5.csv
+[rank 150] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_16_16_16_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_16_16_16_CDT.FLOW.hdf5.csv'.
+[rank 167] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_19_06_35_CDT.FLOW.hdf5.csv
+[rank 167] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_19_06_35_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_19_06_35_CDT.FLOW.hdf5.csv'.
+[rank 25] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_18_33_58_CDT.FLOW.hdf5.csv
+[rank 25] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_33_58_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_33_58_CDT.FLOW.hdf5.csv'.
+[rank 76] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_03_14_53_CDT.FLOW.hdf5.csv
+[rank 76] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_03_14_53_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_03_14_53_CDT.FLOW.hdf5.csv'.
+[rank 83] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_04_25_01_CDT.FLOW.hdf5.csv
+[rank 83] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_04_25_01_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_04_25_01_CDT.FLOW.hdf5.csv'.
+[rank 196] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_10_00_07_07_CDT.FLOW.hdf5.csv
+[rank 196] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_10_00_07_07_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_10_00_07_07_CDT.FLOW.hdf5.csv'.
+[rank 160] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_17_56_27_CDT.FLOW.hdf5.csv
+[rank 160] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_17_56_27_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_17_56_27_CDT.FLOW.hdf5.csv'.
+[rank 182] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_21_36_51_CDT.FLOW.hdf5.csv
+[rank 182] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_21_36_51_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_21_36_51_CDT.FLOW.hdf5.csv'.
+[rank 23] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_18_13_55_CDT.FLOW.hdf5.csv
+[rank 23] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_13_55_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_13_55_CDT.FLOW.hdf5.csv'.
+[rank 93] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_06_15_12_CDT.FLOW.hdf5.csv
+[rank 93] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_06_15_12_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_06_15_12_CDT.FLOW.hdf5.csv'.
+[rank 6] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_14_43_32_CDT.FLOW.hdf5.csv
+[rank 6] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_43_32_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_43_32_CDT.FLOW.hdf5.csv'.
+[rank 34] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_20_04_07_CDT.FLOW.hdf5.csv
+[rank 34] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_20_04_07_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_20_04_07_CDT.FLOW.hdf5.csv'.
+[rank 60] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_00_34_36_CDT.FLOW.hdf5.csv
+[rank 60] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_00_34_36_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_00_34_36_CDT.FLOW.hdf5.csv'.
+[rank 86] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_05_05_05_CDT.FLOW.hdf5.csv
+[rank 86] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_05_05_05_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_05_05_05_CDT.FLOW.hdf5.csv'.
+[rank 102] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_07_45_22_CDT.FLOW.hdf5.csv
+[rank 102] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_07_45_22_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_07_45_22_CDT.FLOW.hdf5.csv'.
+[rank 105] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_08_15_25_CDT.FLOW.hdf5.csv
+[rank 105] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_08_15_25_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_08_15_25_CDT.FLOW.hdf5.csv'.
+[rank 26] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_18_43_59_CDT.FLOW.hdf5.csv
+[rank 26] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_43_59_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_43_59_CDT.FLOW.hdf5.csv'.
+[rank 173] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_20_06_41_CDT.FLOW.hdf5.csv
+[rank 173] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_20_06_41_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_20_06_41_CDT.FLOW.hdf5.csv'.
+[rank 122] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_11_15_44_CDT.FLOW.hdf5.csv
+[rank 122] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_11_15_44_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_11_15_44_CDT.FLOW.hdf5.csv'.
+[rank 38] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_20_44_11_CDT.FLOW.hdf5.csv
+[rank 38] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_20_44_11_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_20_44_11_CDT.FLOW.hdf5.csv'.
+[rank 109] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_09_05_30_CDT.FLOW.hdf5.csv
+[rank 109] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_09_05_30_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_09_05_30_CDT.FLOW.hdf5.csv'.
+[rank 148] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_15_56_14_CDT.FLOW.hdf5.csv
+[rank 148] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_15_56_14_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_15_56_14_CDT.FLOW.hdf5.csv'.
+[rank 126] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_11_55_49_CDT.FLOW.hdf5.csv
+[rank 126] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_11_55_49_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_11_55_49_CDT.FLOW.hdf5.csv'.
+[rank 33] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_19_54_06_CDT.FLOW.hdf5.csv
+[rank 33] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_54_06_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_54_06_CDT.FLOW.hdf5.csv'.
+[rank 39] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_21_04_13_CDT.FLOW.hdf5.csv
+[rank 39] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_04_13_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_04_13_CDT.FLOW.hdf5.csv'.
+[rank 129] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_12_25_52_CDT.FLOW.hdf5.csv
+[rank 129] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_12_25_52_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_12_25_52_CDT.FLOW.hdf5.csv'.
+[rank 3] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_14_13_29_CDT.FLOW.hdf5.csv
+[rank 3] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_13_29_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_13_29_CDT.FLOW.hdf5.csv'.
+[rank 190] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_23_07_00_CDT.FLOW.hdf5.csv
+[rank 190] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_23_07_00_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_23_07_00_CDT.FLOW.hdf5.csv'.
+[rank 166] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_18_56_33_CDT.FLOW.hdf5.csv
+[rank 166] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_18_56_33_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_18_56_33_CDT.FLOW.hdf5.csv'.
+[rank 192] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_23_27_02_CDT.FLOW.hdf5.csv
+[rank 192] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_23_27_02_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_23_27_02_CDT.FLOW.hdf5.csv'.
+[rank 149] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_16_06_15_CDT.FLOW.hdf5.csv
+[rank 149] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_16_06_15_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_16_06_15_CDT.FLOW.hdf5.csv'.
+[rank 197] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_10_00_17_08_CDT.FLOW.hdf5.csv
+[rank 197] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_10_00_17_08_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_10_00_17_08_CDT.FLOW.hdf5.csv'.
+[rank 188] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_22_46_58_CDT.FLOW.hdf5.csv
+[rank 188] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_22_46_58_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_22_46_58_CDT.FLOW.hdf5.csv'.
+[rank 40] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_21_14_15_CDT.FLOW.hdf5.csv
+[rank 40] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_14_15_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_14_15_CDT.FLOW.hdf5.csv'.
+[rank 66] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_01_34_42_CDT.FLOW.hdf5.csv
+[rank 66] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_01_34_42_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_01_34_42_CDT.FLOW.hdf5.csv'.
+[rank 191] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_23_17_01_CDT.FLOW.hdf5.csv
+[rank 191] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_23_17_01_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_23_17_01_CDT.FLOW.hdf5.csv'.
+[rank 147] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_15_46_13_CDT.FLOW.hdf5.csv
+[rank 147] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_15_46_13_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_15_46_13_CDT.FLOW.hdf5.csv'.
+[rank 77] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_03_24_54_CDT.FLOW.hdf5.csv
+[rank 77] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_03_24_54_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_03_24_54_CDT.FLOW.hdf5.csv'.
+[rank 41] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_21_24_16_CDT.FLOW.hdf5.csv
+[rank 41] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_24_16_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_24_16_CDT.FLOW.hdf5.csv'.
+[rank 164] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_18_36_31_CDT.FLOW.hdf5.csv
+[rank 164] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_18_36_31_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_18_36_31_CDT.FLOW.hdf5.csv'.
+[rank 158] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_17_36_25_CDT.FLOW.hdf5.csv
+[rank 158] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_17_36_25_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_17_36_25_CDT.FLOW.hdf5.csv'.
+[rank 161] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_18_06_28_CDT.FLOW.hdf5.csv
+[rank 161] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_18_06_28_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_18_06_28_CDT.FLOW.hdf5.csv'.
+[rank 136] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_13_35_59_CDT.FLOW.hdf5.csv
+[rank 136] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_13_35_59_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_13_35_59_CDT.FLOW.hdf5.csv'.
+[rank 143] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_14_46_07_CDT.FLOW.hdf5.csv
+[rank 143] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_14_46_07_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_14_46_07_CDT.FLOW.hdf5.csv'.
+[rank 174] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_20_16_42_CDT.FLOW.hdf5.csv
+[rank 174] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_20_16_42_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_20_16_42_CDT.FLOW.hdf5.csv'.
+[rank 106] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_08_35_27_CDT.FLOW.hdf5.csv
+[rank 106] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_08_35_27_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_08_35_27_CDT.FLOW.hdf5.csv'.
+[rank 108] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_08_55_29_CDT.FLOW.hdf5.csv
+[rank 108] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_08_55_29_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_08_55_29_CDT.FLOW.hdf5.csv'.
+[rank 28] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_19_04_01_CDT.FLOW.hdf5.csv
+[rank 28] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_04_01_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_04_01_CDT.FLOW.hdf5.csv'.
+[rank 179] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_21_06_47_CDT.FLOW.hdf5.csv
+[rank 179] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_21_06_47_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_21_06_47_CDT.FLOW.hdf5.csv'.
+[rank 153] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_16_46_20_CDT.FLOW.hdf5.csv
+[rank 153] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_16_46_20_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_16_46_20_CDT.FLOW.hdf5.csv'.
+[rank 24] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_18_23_56_CDT.FLOW.hdf5.csv
+[rank 24] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_23_56_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_23_56_CDT.FLOW.hdf5.csv'.
+[rank 189] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_22_56_59_CDT.FLOW.hdf5.csv
+[rank 189] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_22_56_59_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_22_56_59_CDT.FLOW.hdf5.csv'.
+[rank 116] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_10_15_38_CDT.FLOW.hdf5.csv
+[rank 116] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_10_15_38_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_10_15_38_CDT.FLOW.hdf5.csv'.
+[rank 135] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_13_25_58_CDT.FLOW.hdf5.csv
+[rank 135] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_13_25_58_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_13_25_58_CDT.FLOW.hdf5.csv'.
+[rank 130] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_12_35_53_CDT.FLOW.hdf5.csv
+[rank 130] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_12_35_53_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_12_35_53_CDT.FLOW.hdf5.csv'.
+[rank 107] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_08_45_28_CDT.FLOW.hdf5.csv
+[rank 107] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_08_45_28_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_08_45_28_CDT.FLOW.hdf5.csv'.
+[rank 0] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_08_13_43_25_CDT.FLOW.hdf5.csv
+[rank 0] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_13_43_25_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_13_43_25_CDT.FLOW.hdf5.csv'.
+[rank 142] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_14_36_06_CDT.FLOW.hdf5.csv
+[rank 142] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_14_36_06_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_14_36_06_CDT.FLOW.hdf5.csv'.
+[rank 119] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_10_45_41_CDT.FLOW.hdf5.csv
+[rank 119] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_10_45_41_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_10_45_41_CDT.FLOW.hdf5.csv'.
+[rank 156] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_17_16_23_CDT.FLOW.hdf5.csv
+[rank 156] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_17_16_23_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_17_16_23_CDT.FLOW.hdf5.csv'.
+[rank 155] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_17_06_22_CDT.FLOW.hdf5.csv
+[rank 155] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_17_06_22_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_17_06_22_CDT.FLOW.hdf5.csv'.
+[rank 124] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_11_35_46_CDT.FLOW.hdf5.csv
+[rank 124] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_11_35_46_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_11_35_46_CDT.FLOW.hdf5.csv'.
+[rank 181] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_21_26_49_CDT.FLOW.hdf5.csv
+[rank 181] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_21_26_49_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_21_26_49_CDT.FLOW.hdf5.csv'.
+[rank 111] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_09_25_33_CDT.FLOW.hdf5.csv
+[rank 111] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_09_25_33_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_09_25_33_CDT.FLOW.hdf5.csv'.
+[rank 185] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_22_16_55_CDT.FLOW.hdf5.csv
+[rank 185] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_22_16_55_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_22_16_55_CDT.FLOW.hdf5.csv'.
+[rank 170] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_muons_first200/packet-0050017-2024_07_09_19_36_38_CDT.FLOW.hdf5.csv
+[rank 170] HDF5: /global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_09_19_36_38_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_09_19_36_38_CDT.FLOW.hdf5.csv'.
