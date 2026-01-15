@@ -471,7 +471,7 @@ def worker_process_file(
             # ---------------------------------
             # Global DBSCAN: keep only largest cluster
             # ---------------------------------
-            db = DBSCAN(eps=5.0, min_samples=3)
+            db = DBSCAN(eps=15.0, min_samples=3)
             labels = db.fit_predict(coords)
 
             mask_non_noise = labels != -1
@@ -563,10 +563,6 @@ def worker_process_file(
             )
             detected_all_noLT = np.array([r[5] for r in all_results_noLT], dtype=float)
             
-            if event % 100 == 0:
-                plot_event_example(detected_all_normal, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE")
-                plot_event_example(detected_all_noLT, all_results_noLT, 1, event, x_mid, y_mid, z_mid, "expected PE no LT crossing")
-
             # ---------------------------------
             # Measured PE sums per trap (this event)
             # ---------------------------------
@@ -604,12 +600,15 @@ def worker_process_file(
             # no-LT logic
             mask_noLT = np.isfinite(pe_exp_noLT_evt_raw) & (pe_exp_noLT_evt_raw > 0)
 
-            pe_exp_noLT_evt = np.where(mask_noLT, pe_exp_noLT_evt_raw, 0.0)
+            pe_exp_noLT_evt = np.where(mask_noLT, pe_exp_evt, 0.0)
             pe_meas_noLT_evt = np.where(mask_noLT, pe_meas_evt, 0.0)
 
-            if event % 100 == 0:
+            if event % 131 == 0:
                 plot_event_example(pe_meas_evt, all_results_normal, 1, event, x, y, z, "measured PE")
-                plot_event_example(pe_meas_noLT_evt, all_results_noLT, 1, event, x, y, z, "measured PE no LT crossing")
+                plot_event_example(pe_meas_noLT_evt, all_results_normal, 1, event, x, y, z, "measured PE no LT crossing")
+
+                plot_event_example(pe_exp_evt, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE")
+                plot_event_example(pe_exp_noLT_evt, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE no LT crossing")
 
             # Accumulate over events
             PE_meas_tot += pe_meas_evt
@@ -814,7 +813,7 @@ def plot_event_example(pde_avg, all_results, max_events, event, x, y, z, title):
     fig = go.Figure(data=[*meshes, track, colorbar_trace])
 
     fig.update_layout(
-        title="Light per light trap (normalized to 1)",
+        title=f"{title}",
         scene=dict(
             xaxis=dict(title="X (cm)", range=[-70, 70]),
             yaxis=dict(title="Z (cm)", range=[-70, 70]),
@@ -918,12 +917,18 @@ def main():
         glob.glob(os.path.join(directory_selected_muons, mu_file_pattern))
     )
 
-    directory1 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/"
-    # directory2 = "/global/cfs/cdirs/dune/www/data/FSD/reflows/v7/flow/cosmics/08Nov2024/"
-    file_pattern = "*.FLOW.hdf5"
-    file_list1 = sorted(glob.glob(os.path.join(directory1, file_pattern)))
-    # file_list2 = sorted(glob.glob(os.path.join(directory2, file_pattern)))
-    file_list = file_list1[0:691]  # + file_list2
+    # Define directory containing the hdf5 files of 2x2 beam data
+    directory1 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july10_2024/nominal_hv/"
+    directory2 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july2_2024/nominal_hv/"
+    directory3 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july7_2024/nominal_hv/"
+    directory4 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/"
+    file_pattern = "*.hdf5"
+
+    file_list1 = sorted(glob.glob(directory1 + file_pattern))
+    file_list2 = sorted(glob.glob(directory2 + file_pattern))
+    file_list3 = sorted(glob.glob(directory3 + file_pattern))
+    file_list4 = sorted(glob.glob(directory4 + file_pattern))
+    file_list = file_list1 + file_list2 + file_list3 + file_list4
 
     # ---- Guard: extra ranks do nothing ----
     if rank < 0 or rank >= len(file_list_muons):
