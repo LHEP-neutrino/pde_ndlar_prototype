@@ -3,9 +3,9 @@
 #SBATCH --account=dune
 #SBATCH --qos=regular
 #SBATCH --constraint=cpu
-#SBATCH --nodes=8
+#SBATCH --nodes=7
 #SBATCH --ntasks-per-node=100
-#SBATCH --time=03:00:00
+#SBATCH --time=00:50:00
 #SBATCH --output=logs/pde_calculation_%j.out
 #SBATCH --error=logs/pde_calculation_%j.err
 
