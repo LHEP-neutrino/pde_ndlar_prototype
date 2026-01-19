@@ -911,24 +911,24 @@ def main():
         rank = 0
 
     # ---- Input locations ----
-    directory_selected_muons = "/global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muons/"
+    directory_selected_muons = "/global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_muon_selection/2x2_display_muons/"
     mu_file_pattern = "*.csv"
     file_list_muons = sorted(
         glob.glob(os.path.join(directory_selected_muons, mu_file_pattern))
     )
 
     # Define directory containing the hdf5 files of 2x2 beam data
-    directory1 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july10_2024/nominal_hv/"
-    directory2 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july2_2024/nominal_hv/"
-    directory3 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july7_2024/nominal_hv/"
-    directory4 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/"
+    directory1 = "/global/cfs/cdirs/dune/users/mnuland/run2flow/flowedrun2/"
+    # directory2 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july2_2024/nominal_hv/"
+    # directory3 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july7_2024/nominal_hv/"
+    # directory4 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/"
     file_pattern = "*.hdf5"
 
     file_list1 = sorted(glob.glob(directory1 + file_pattern))
-    file_list2 = sorted(glob.glob(directory2 + file_pattern))
-    file_list3 = sorted(glob.glob(directory3 + file_pattern))
-    file_list4 = sorted(glob.glob(directory4 + file_pattern))
-    file_list = file_list1 + file_list2 + file_list3 + file_list4
+    # file_list2 = sorted(glob.glob(directory2 + file_pattern))
+    # file_list3 = sorted(glob.glob(directory3 + file_pattern))
+    # file_list4 = sorted(glob.glob(directory4 + file_pattern))
+    file_list = file_list1  # + file_list2 + file_list3 + file_list4
 
     # ---- Guard: extra ranks do nothing ----
     if rank < 0 or rank >= len(file_list_muons):
@@ -943,6 +943,7 @@ def main():
     csv_file = file_list_muons[rank]
     csv_basename = os.path.basename(csv_file)
     hdf5_name = csv_basename.replace(".csv", "")
+    # hdf5_name = "matched_flowed_mpd_run_data_rctl_766_p012.FLOW.hdf5"
     hdf5_path = hdf5_map.get(hdf5_name)
 
     if hdf5_path is None:
