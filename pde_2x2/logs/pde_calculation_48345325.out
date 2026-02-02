@@ -1,0 +1,200 @@
+Found 50 muon selection CSV files.
+[rank 11] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_16_13_42_CDT.FLOW.hdf5.csv
+[rank 11] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_13_42_CDT.FLOW.hdf5
+[rank 11] ERROR processing packet-0050017-2024_07_08_16_13_42_CDT.FLOW.hdf5.csv: Cannot convert masked element to a Python int.
+Found 50 muon selection CSV files.
+[rank 10] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_16_03_41_CDT.FLOW.hdf5.csv
+[rank 10] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_03_41_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_16_03_41_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 7] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_14_53_33_CDT.FLOW.hdf5.csv
+[rank 7] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_53_33_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_53_33_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 15] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_16_53_46_CDT.FLOW.hdf5.csv
+[rank 15] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_53_46_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_16_53_46_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 20] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_17_43_52_CDT.FLOW.hdf5.csv
+[rank 20] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_43_52_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_43_52_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 45] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_22_04_20_CDT.FLOW.hdf5.csv
+[rank 45] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_04_20_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_04_20_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 32] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_19_44_05_CDT.FLOW.hdf5.csv
+[rank 32] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_44_05_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_44_05_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 31] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_19_34_04_CDT.FLOW.hdf5.csv
+[rank 31] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_34_04_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_34_04_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 19] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_17_33_51_CDT.FLOW.hdf5.csv
+[rank 19] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_33_51_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_33_51_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 36] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_20_24_09_CDT.FLOW.hdf5.csv
+[rank 36] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_20_24_09_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_20_24_09_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 2] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_14_03_28_CDT.FLOW.hdf5.csv
+[rank 2] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_03_28_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_03_28_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 46] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_22_14_21_CDT.FLOW.hdf5.csv
+[rank 46] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_14_21_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_14_21_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 37] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_20_34_10_CDT.FLOW.hdf5.csv
+[rank 37] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_20_34_10_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_20_34_10_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 49] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_22_44_24_CDT.FLOW.hdf5.csv
+[rank 49] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_44_24_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_44_24_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 4] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_14_23_30_CDT.FLOW.hdf5.csv
+[rank 4] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_23_30_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_23_30_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 47] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_22_24_22_CDT.FLOW.hdf5.csv
+[rank 47] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_24_22_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_24_22_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 17] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_17_13_49_CDT.FLOW.hdf5.csv
+[rank 17] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_13_49_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_13_49_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 48] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_22_34_23_CDT.FLOW.hdf5.csv
+[rank 48] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_22_34_23_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_22_34_23_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 21] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_17_53_53_CDT.FLOW.hdf5.csv
+[rank 21] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_53_53_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_53_53_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 8] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_15_43_39_CDT.FLOW.hdf5.csv
+[rank 8] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_15_43_39_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_15_43_39_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 5] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_14_33_31_CDT.FLOW.hdf5.csv
+[rank 5] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_33_31_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_33_31_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 43] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_21_44_18_CDT.FLOW.hdf5.csv
+[rank 43] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_44_18_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_44_18_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 18] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_17_23_50_CDT.FLOW.hdf5.csv
+[rank 18] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_23_50_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_23_50_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 14] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_16_43_45_CDT.FLOW.hdf5.csv
+[rank 14] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_43_45_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_16_43_45_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 30] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_19_24_03_CDT.FLOW.hdf5.csv
+[rank 30] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_24_03_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_24_03_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 34] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_20_04_07_CDT.FLOW.hdf5.csv
+[rank 34] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_20_04_07_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_20_04_07_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 9] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_15_53_40_CDT.FLOW.hdf5.csv
+[rank 9] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_15_53_40_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_15_53_40_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 12] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_16_23_43_CDT.FLOW.hdf5.csv
+[rank 12] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_23_43_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_16_23_43_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 35] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_20_14_08_CDT.FLOW.hdf5.csv
+[rank 35] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_20_14_08_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_20_14_08_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 22] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_18_03_54_CDT.FLOW.hdf5.csv
+[rank 22] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_03_54_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_03_54_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 40] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_21_14_15_CDT.FLOW.hdf5.csv
+[rank 40] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_14_15_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_14_15_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 27] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_18_54_00_CDT.FLOW.hdf5.csv
+[rank 27] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_54_00_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_54_00_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 29] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_19_14_02_CDT.FLOW.hdf5.csv
+[rank 29] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_14_02_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_14_02_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 44] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_21_54_19_CDT.FLOW.hdf5.csv
+[rank 44] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_54_19_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_54_19_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 16] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_17_03_47_CDT.FLOW.hdf5.csv
+[rank 16] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_17_03_47_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_17_03_47_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 23] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_18_13_55_CDT.FLOW.hdf5.csv
+[rank 23] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_13_55_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_13_55_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 42] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_21_34_17_CDT.FLOW.hdf5.csv
+[rank 42] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_34_17_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_34_17_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 13] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_16_33_44_CDT.FLOW.hdf5.csv
+[rank 13] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_16_33_44_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_16_33_44_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 25] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_18_33_58_CDT.FLOW.hdf5.csv
+[rank 25] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_33_58_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_33_58_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 1] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_13_53_27_CDT.FLOW.hdf5.csv
+[rank 1] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_13_53_27_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_13_53_27_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 26] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_18_43_59_CDT.FLOW.hdf5.csv
+[rank 26] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_43_59_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_43_59_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 39] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_21_04_13_CDT.FLOW.hdf5.csv
+[rank 39] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_04_13_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_04_13_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 6] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_14_43_32_CDT.FLOW.hdf5.csv
+[rank 6] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_43_32_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_43_32_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 38] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_20_44_11_CDT.FLOW.hdf5.csv
+[rank 38] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_20_44_11_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_20_44_11_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 28] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_19_04_01_CDT.FLOW.hdf5.csv
+[rank 28] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_04_01_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_04_01_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 33] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_19_54_06_CDT.FLOW.hdf5.csv
+[rank 33] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_19_54_06_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_19_54_06_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 3] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_14_13_29_CDT.FLOW.hdf5.csv
+[rank 3] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_14_13_29_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_14_13_29_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 24] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_18_23_56_CDT.FLOW.hdf5.csv
+[rank 24] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_18_23_56_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_18_23_56_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 41] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_21_24_16_CDT.FLOW.hdf5.csv
+[rank 41] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_21_24_16_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_21_24_16_CDT.FLOW.hdf5.csv'.
+Found 50 muon selection CSV files.
+[rank 0] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2/packet-0050017-2024_07_08_13_43_25_CDT.FLOW.hdf5.csv
+[rank 0] HDF5: /pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/packet-0050017-2024_07_08_13_43_25_CDT.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_packet-0050017-2024_07_08_13_43_25_CDT.FLOW.hdf5.csv'.

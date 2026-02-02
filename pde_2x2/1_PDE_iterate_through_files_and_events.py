@@ -45,7 +45,7 @@ def flipYZ(coords):
 
 def get_plate_corners(det_id, tpc_shift, geom_dict):
     # ACLs are every modulo 4 -> shape_key convention you used
-    shape_key = 0 if (det_id % 4) == 0 else 1 # ==3 for FSD!
+    shape_key = 0 if (det_id % 4) == 0 else 1  # ==3 for FSD!
     offs_min = np.array(geom_dict["geom"][shape_key]["min"], float)
     offs_max = np.array(geom_dict["geom"][shape_key]["max"], float)
 
@@ -562,7 +562,7 @@ def worker_process_file(
                 [r[5] for r in all_results_normal], dtype=float
             )
             detected_all_noLT = np.array([r[5] for r in all_results_noLT], dtype=float)
-            
+
             # ---------------------------------
             # Measured PE sums per trap (this event)
             # ---------------------------------
@@ -573,16 +573,16 @@ def worker_process_file(
             # Take first entry (bug in flow triples all entries?)
             tpcs = sum_hits["tpc"][0, 0]
             traps = sum_hits["det"][0, 0]
-            sums = sum_hits["sum"][0, 0]
+            sums = sum_hits["integral"][0, 0]
 
             for tpc, trap, pe_sum in zip(tpcs, traps, sums):
                 idx = trap_index[(int(tpc), int(trap))]
-                light_trap_pe_sums[idx] = float(pe_sum)
+                light_trap_pe_sums[idx] = float(pe_sum) / 4  # correct for lowest adc bits being 0
 
             pe_meas_evt = np.asarray(light_trap_pe_sums, dtype=float)
             pe_exp_evt = np.asarray(detected_all_normal, dtype=float)
             pe_exp_noLT_evt_raw = np.asarray(detected_all_noLT, dtype=float)
-            
+
             # ---------------------------------
             # Initialize global accumulators once
             # ---------------------------------
@@ -603,12 +603,12 @@ def worker_process_file(
             pe_exp_noLT_evt = np.where(mask_noLT, pe_exp_evt, 0.0)
             pe_meas_noLT_evt = np.where(mask_noLT, pe_meas_evt, 0.0)
 
-            if event % 131 == 0:
-                plot_event_example(pe_meas_evt, all_results_normal, 1, event, x, y, z, "measured PE")
-                plot_event_example(pe_meas_noLT_evt, all_results_normal, 1, event, x, y, z, "measured PE no LT crossing")
+            # if event % 131 == 0:
+            #     plot_event_example(pe_meas_evt, all_results_normal, 1, event, x, y, z, "measured PE")
+            #     plot_event_example(pe_meas_noLT_evt, all_results_normal, 1, event, x, y, z, "measured PE no LTC")
 
-                plot_event_example(pe_exp_evt, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE")
-                plot_event_example(pe_exp_noLT_evt, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE no LT crossing")
+            #     plot_event_example(pe_exp_evt, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE")
+            #     plot_event_example(pe_exp_noLT_evt, all_results_normal, 1, event, x_mid, y_mid, z_mid, "expected PE no LTC")
 
             # Accumulate over events
             PE_meas_tot += pe_meas_evt
@@ -720,11 +720,11 @@ def worker_process_file(
 
 #     plt.savefig(os.path.join("pde_plots/", f'pde_{title}_{event}.png'))
 #     plt.close()
+
+
 def plot_event_example(pde_avg, all_results, max_events, event, x, y, z, title):
-    import numpy as np
     import plotly.graph_objects as go
     import plotly.io as pio
-    import os
 
     # -----------------------------
     # Normalize (same logic)
@@ -911,14 +911,14 @@ def main():
         rank = 0
 
     # ---- Input locations ----
-    directory_selected_muons = "/global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_muon_selection/2x2_display_muons/"
+    directory_selected_muons = "/global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/"#"/global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muons/" "/global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run1_2x2_JD_muonselection_v2"
     mu_file_pattern = "*.csv"
     file_list_muons = sorted(
         glob.glob(os.path.join(directory_selected_muons, mu_file_pattern))
     )
-
+    print(f"Found {len(file_list_muons)} muon selection CSV files.")
     # Define directory containing the hdf5 files of 2x2 beam data
-    directory1 = "/global/cfs/cdirs/dune/users/mnuland/run2flow/flowedrun2/"
+    directory1 = "/global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/"#"/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july10_2024/nominal_hv/" "/pscratch/sd/d/dunepro/mkramer/output/Reflow_2x2_v11_lightUpdate_july8First50/flow/beam/july8_2024/nominal_hv/"
     # directory2 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july2_2024/nominal_hv/"
     # directory3 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july7_2024/nominal_hv/"
     # directory4 = "/global/cfs/cdirs/dune/www/data/2x2/reflows/v11/flow/beam/july8_2024/nominal_hv/"
@@ -928,7 +928,7 @@ def main():
     # file_list2 = sorted(glob.glob(directory2 + file_pattern))
     # file_list3 = sorted(glob.glob(directory3 + file_pattern))
     # file_list4 = sorted(glob.glob(directory4 + file_pattern))
-    file_list = file_list1  # + file_list2 + file_list3 + file_list4
+    file_list = file_list1  #+ file_list2 + file_list3 + file_list4
 
     # ---- Guard: extra ranks do nothing ----
     if rank < 0 or rank >= len(file_list_muons):
@@ -943,7 +943,6 @@ def main():
     csv_file = file_list_muons[rank]
     csv_basename = os.path.basename(csv_file)
     hdf5_name = csv_basename.replace(".csv", "")
-    # hdf5_name = "matched_flowed_mpd_run_data_rctl_766_p012.FLOW.hdf5"
     hdf5_path = hdf5_map.get(hdf5_name)
 
     if hdf5_path is None:
@@ -982,7 +981,6 @@ def main():
             tpc_bounds=tpc_bounds,
             det_positions_local=det_positions_local,
         )
-
     except Exception as e:
         print(f"[rank {rank}] ERROR processing {csv_basename}: {e}")
         # traceback.print_exc()

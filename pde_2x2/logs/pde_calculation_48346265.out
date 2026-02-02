@@ -1,0 +1,160 @@
+Found 30 muon selection CSV files.
+Rank 37: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 44: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 47: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 35: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 38: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 45: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 36: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 48: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 33: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 41: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 30: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 40: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 43: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 32: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 34: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 31: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 42: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 46: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 49: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+Rank 39: no CSV to process (len(file_list_muons)=30), exiting.
+Found 30 muon selection CSV files.
+[rank 27] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p565758.FLOW.hdf5.csv
+[rank 27] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p565758.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p565758.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 1] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_766_p121314.FLOW.hdf5.csv
+[rank 1] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_766_p121314.FLOW.hdf5
+[rank 1] ERROR processing matched_flowed_mpd_run_data_rctl_766_p121314.FLOW.hdf5.csv: Cannot convert masked element to a Python int.
+Found 30 muon selection CSV files.
+[rank 23] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p44454647.FLOW.hdf5.csv
+[rank 23] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p44454647.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p44454647.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 22] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p41424344.FLOW.hdf5.csv
+[rank 22] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p41424344.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p41424344.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 24] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p47484950.FLOW.hdf5.csv
+[rank 24] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p47484950.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p47484950.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 21] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p38394041.FLOW.hdf5.csv
+[rank 21] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p38394041.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p38394041.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 13] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p181920.FLOW.hdf5.csv
+[rank 13] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p181920.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p181920.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 28] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p678.FLOW.hdf5.csv
+[rank 28] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p678.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p678.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 20] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p35363738.FLOW.hdf5.csv
+[rank 20] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p35363738.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p35363738.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 12] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p151617.FLOW.hdf5.csv
+[rank 12] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p151617.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p151617.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 14] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p212223.FLOW.hdf5.csv
+[rank 14] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p212223.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p212223.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 25] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p50515253.FLOW.hdf5.csv
+[rank 25] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p50515253.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p50515253.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 29] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p91011.FLOW.hdf5.csv
+[rank 29] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p91011.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p91011.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 19] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p345.FLOW.hdf5.csv
+[rank 19] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p345.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p345.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 16] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p26272829.FLOW.hdf5.csv
+[rank 16] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p26272829.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p26272829.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 17] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p29303132.FLOW.hdf5.csv
+[rank 17] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p29303132.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p29303132.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 26] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p53545556.FLOW.hdf5.csv
+[rank 26] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p53545556.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p53545556.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 15] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p23242526.FLOW.hdf5.csv
+[rank 15] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p23242526.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p23242526.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 10] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p012.FLOW.hdf5.csv
+[rank 10] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p012.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p012.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 18] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p32333435.FLOW.hdf5.csv
+[rank 18] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p32333435.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p32333435.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 7] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_766_p333435.FLOW.hdf5.csv
+[rank 7] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_766_p333435.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_766_p333435.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 11] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_768_p121314.FLOW.hdf5.csv
+[rank 11] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_768_p121314.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_768_p121314.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 4] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_766_p242526.FLOW.hdf5.csv
+[rank 4] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_766_p242526.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_766_p242526.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 5] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_766_p272829.FLOW.hdf5.csv
+[rank 5] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_766_p272829.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_766_p272829.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 6] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_766_p303132.FLOW.hdf5.csv
+[rank 6] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_766_p303132.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_766_p303132.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 9] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_766_p91011.FLOW.hdf5.csv
+[rank 9] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_766_p91011.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_766_p91011.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 2] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_766_p151617.FLOW.hdf5.csv
+[rank 2] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_766_p151617.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_766_p151617.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 0] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_766_p012.FLOW.hdf5.csv
+[rank 0] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_766_p012.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_766_p012.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 8] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_766_p678.FLOW.hdf5.csv
+[rank 8] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_766_p678.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_766_p678.FLOW.hdf5.csv'.
+Found 30 muon selection CSV files.
+[rank 3] CSV : /global/cfs/cdirs/dune/users/wermelinger/2x2/PDE_study/run2_2x2_JD_muonselection/matched_flowed_mpd_run_data_rctl_766_p181920.FLOW.hdf5.csv
+[rank 3] HDF5: /global/cfs/cdirs/dune/users/mnuland/run2flow/matched_flowed_run2_new_gains/matched_flowed_mpd_run_data_rctl_766_p181920.FLOW.hdf5
+[rank worker] Wrote 128 traps to 'pde_files/pde_matched_flowed_mpd_run_data_rctl_766_p181920.FLOW.hdf5.csv'.
